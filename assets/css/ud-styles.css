@@ -269,7 +269,7 @@ p {
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: var(--white);
+  background-color: var(--black);
   display: block;
   margin: 5px 0;
   position: relative;

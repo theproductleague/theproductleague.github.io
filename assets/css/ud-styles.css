@@ -22,7 +22,7 @@
   --font: "metropolis", sans-serif;
   --body-color: #637381;
   --heading-color: #212b36;
-  --primary-color: #3056d3;
+  --primary-color: #0a2a5b;
   --white: #ffffff;
   --black: #000000;
 }
@@ -69,11 +69,13 @@ button:focus,
 a:focus,
 a:hover {
   text-decoration: none;
+  color: #000000;
 }
 
 i,
 span,
 a {
+  color: #0a2a5b;
   display: inline-block;
 }
 
@@ -503,7 +505,6 @@ p {
 
 .sticky .navbar-nav .nav-item:hover > a {
   color: var(--primary-color);
-  /* opacity: 1; */
 }
 
 .sticky .navbar-nav .nav-item a {
@@ -917,6 +918,7 @@ p {
 .ud-pricing {
   padding-top: 10px;
   padding-bottom: 90px;
+  color: #000;
 }
 
 @media (max-width: 767px) {
@@ -929,7 +931,7 @@ p {
 .ud-single-pricing {
   margin-bottom: 40px;
   background: var(--white);
-  border: 2px solid #d4deff;
+  border: 2px solid #0a2a5b;
   border-radius: 8px;
   text-align: center;
   padding: 45px 30px;
@@ -937,25 +939,18 @@ p {
 }
 
 .ud-single-pricing.active {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#3056d3),
-    to(#179bee)
-  );
-  background: linear-gradient(180deg, #3056d3 0%, #179bee 100%);
+  background: #f3f4fe;
   border: none;
   padding: 55px 30px;
 }
 
 .ud-single-pricing.active .ud-pricing-header h3,
 .ud-single-pricing.active .ud-pricing-header h4 {
-  color: var(--white);
+  color: var(--black);
 }
 
 .ud-single-pricing.active .ud-pricing-body li {
-  color: var(--white);
+  color: var(--black);
 }
 
 .ud-single-pricing.first-item::after,
@@ -1457,7 +1452,7 @@ p {
   box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   background: var(--white);
-  padding: 60px;
+  padding: 40px;
 }
 
 @media (max-width: 767px) {
@@ -1515,11 +1510,13 @@ p {
 
 /* ===== Footer CSS ===== */
 .ud-footer {
-  background: var(--heading-color);
-  padding-top: 100px;
+  background: #f3f4fe;
+  /* padding-top: 100px; */
   position: relative;
   z-index: 1;
   overflow: hidden;
+  color: #000000;
+  line-height: 1.4em;
 }
 
 .ud-footer .shape {

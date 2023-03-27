@@ -937,25 +937,18 @@ p {
 }
 
 .ud-single-pricing.active {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#3056d3),
-    to(#179bee)
-  );
-  background: linear-gradient(180deg, #3056d3 0%, #179bee 100%);
+  background: #d4deff;
   border: none;
   padding: 55px 30px;
 }
 
 .ud-single-pricing.active .ud-pricing-header h3,
 .ud-single-pricing.active .ud-pricing-header h4 {
-  color: var(--white);
+  color: var(--black);
 }
 
 .ud-single-pricing.active .ud-pricing-body li {
-  color: var(--white);
+  color: var(--black);
 }
 
 .ud-single-pricing.first-item::after,

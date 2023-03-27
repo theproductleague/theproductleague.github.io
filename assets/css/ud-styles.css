@@ -22,7 +22,7 @@
   --font: "metropolis", sans-serif;
   --body-color: #637381;
   --heading-color: #212b36;
-  --primary-color: #0a2a5b;
+  --primary-color: #3056d3;
   --white: #ffffff;
   --black: #000000;
 }
@@ -69,13 +69,11 @@ button:focus,
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #000000;
 }
 
 i,
 span,
 a {
-  color: #0a2a5b;
   display: inline-block;
 }
 
@@ -269,7 +267,7 @@ p {
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: var(--black);
+  background-color: var(--white);
   display: block;
   margin: 5px 0;
   position: relative;
@@ -505,6 +503,7 @@ p {
 
 .sticky .navbar-nav .nav-item:hover > a {
   color: var(--primary-color);
+  /* opacity: 1; */
 }
 
 .sticky .navbar-nav .nav-item a {
@@ -918,7 +917,6 @@ p {
 .ud-pricing {
   padding-top: 10px;
   padding-bottom: 90px;
-  color: #000;
 }
 
 @media (max-width: 767px) {
@@ -931,7 +929,7 @@ p {
 .ud-single-pricing {
   margin-bottom: 40px;
   background: var(--white);
-  border: 2px solid #0a2a5b;
+  border: 2px solid #d4deff;
   border-radius: 8px;
   text-align: center;
   padding: 45px 30px;
@@ -939,18 +937,25 @@ p {
 }
 
 .ud-single-pricing.active {
-  background: #f3f4fe;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#3056d3),
+    to(#179bee)
+  );
+  background: linear-gradient(180deg, #3056d3 0%, #179bee 100%);
   border: none;
   padding: 55px 30px;
 }
 
 .ud-single-pricing.active .ud-pricing-header h3,
 .ud-single-pricing.active .ud-pricing-header h4 {
-  color: var(--black);
+  color: var(--white);
 }
 
 .ud-single-pricing.active .ud-pricing-body li {
-  color: var(--black);
+  color: var(--white);
 }
 
 .ud-single-pricing.first-item::after,
@@ -1452,7 +1457,7 @@ p {
   box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   background: var(--white);
-  padding: 40px;
+  padding: 60px;
 }
 
 @media (max-width: 767px) {
@@ -1511,12 +1516,10 @@ p {
 /* ===== Footer CSS ===== */
 .ud-footer {
   background: #f3f4fe;
-  /* padding-top: 100px; */
+  padding-top: 100px;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  color: #000000;
-  line-height: 1.4em;
 }
 
 .ud-footer .shape {

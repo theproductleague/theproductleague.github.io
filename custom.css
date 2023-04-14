@@ -1,15 +1,50 @@
-.custom-btn {
-  background-color: #0a2a5b;
-  color: #ffffff;
+@import url("https://fonts.cdnfonts.com/css/sf-mono");
+@import url("https://fonts.cdnfonts.com/css/tt-hoves-pro-trial");
+.tpl-btn {
+  font-family: "TT Hoves Pro Trial", monospace;
+  background-color: #130d6f;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.custom-btn:hover {
-  background-color: #000;
-  color: #ffffff;
+.tpl-btn:hover {
+  background-color: #f8dd5c;
+  color: #130d6f;
+  /* border: solid 1px #130d6f; */
+  font-size: 17px;
+}
+
+.csta {
+  font-size: larger;
+  font-weight: 300;
+  color: #130d6f;
+  border-radius: 0.7rem;
+}
+
+.custom-a:hover {
+  font-size: larger;
+  /* color: #130d6f; */
+}
+
+.custom-alert {
+  background-color: #f7f0ca;
+  color: #957c00;
+  padding: 10px 1px;
+  font-family: "SF Mono", monospace;
+  font-size: small;
+}
+
+.team-img {
+  border: solid 3px #f8dd5c;
+}
+
+.team-img:hover {
+  border: solid 3px #130d6f;
+  cursor: pointer;
 }

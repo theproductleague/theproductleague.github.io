@@ -11,7 +11,9 @@
   COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.cdnfonts.com/css/tt-hoves-pro-trial");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-mono");
 @font-face {
   font-family: "metropolis";
   src: url("../fonts/metropolis-2-cufonfonts-webfont/Metropolis-Regular.woff")
@@ -19,12 +21,13 @@
 }
 
 :root {
-  --font: "metropolis", sans-serif;
-  --body-color: #637381;
-  --heading-color: #212b36;
+  --font: "TT Hoves Pro Trial", sans-serif;
+  --body-color: #000000;
+  --heading-color: #000000;
   --primary-color: #3056d3;
   --white: #ffffff;
   --black: #000000;
+  font-weight: 400;
 }
 
 body {
@@ -33,6 +36,7 @@ body {
   font-style: normal;
   color: var(--body-color);
   overflow-x: hidden;
+  font-weight: 200;
 }
 
 * {
@@ -92,7 +96,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: normal !important;
   color: var(--heading-color);
   margin: 0px;
 }
@@ -267,7 +271,7 @@ p {
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: var(--black);
+  background-color: var(--blacke);
   display: block;
   margin: 5px 0;
   position: relative;
@@ -338,9 +342,7 @@ p {
 }
 
 .navbar-nav .nav-item > a {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--black);
+  font-size: 18px;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   padding: 25px 8px;
@@ -352,15 +354,12 @@ p {
   .navbar-nav .nav-item > a {
     display: block;
     padding: 8px 0;
-    color: var(--heading-color);
   }
 }
 
 .navbar-nav .nav-item > a:hover,
 .navbar-nav .nav-item > a.active {
   color: rgba(0, 0, 0);
-
-  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -368,7 +367,6 @@ p {
   .navbar-nav .nav-item > a:hover,
   .navbar-nav .nav-item > a.active {
     color: rgba(0, 0, 0);
-    font-weight: bold;
   }
 }
 
@@ -416,8 +414,6 @@ p {
 }
 
 .navbar-nav .nav-item:hover > a {
-  color: #000000;
-  opacity: 0.5;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -536,7 +532,7 @@ p {
 
 /* ===== Hero CSS ===== */
 .ud-hero {
-  background: url("https://images.pexels.com/photos/1181343/pexels-photo-1181343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  /* background: linear-gradient(120deg, #ff9191, #f8dd5c); */
   background-size: cover;
   padding-top: 110px;
 }
@@ -732,8 +728,9 @@ p {
 }
 
 .ud-section-title p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 @media (max-width: 767px) {
@@ -822,7 +819,7 @@ p {
 
 /* ===== About CSS ===== */
 .ud-about {
-  background: #f3f4fe;
+  background: #f8dd5c;
   padding: 120px 0;
 }
 
@@ -895,7 +892,7 @@ p {
 }
 
 .ud-about-content p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 28px;
   margin-bottom: 25px;
 }
@@ -916,7 +913,6 @@ p {
 /* ===== Pricing CSS ===== */
 .ud-pricing {
   padding-top: 10px;
-  padding-bottom: 90px;
 }
 
 @media (max-width: 767px) {
@@ -929,17 +925,14 @@ p {
 .ud-single-pricing {
   margin-bottom: 40px;
   background: var(--white);
-  border: 2px solid #d4deff;
   border-radius: 8px;
   text-align: center;
-  padding: 45px 30px;
+  padding: 25px 20px;
   position: relative;
 }
 
 .ud-single-pricing.active {
-  background: #d4deff;
-  border: none;
-  padding: 55px 30px;
+  border: 1px solid #0c0c0c;
 }
 
 .ud-single-pricing.active .ud-pricing-header h3,
@@ -948,6 +941,8 @@ p {
 }
 
 .ud-single-pricing.active .ud-pricing-body li {
+  font-size: large;
+  font-weight: 300;
   color: var(--black);
 }
 
@@ -968,7 +963,6 @@ p {
 }
 
 .ud-single-pricing.last-item::after {
-  background: #13c296;
   top: -2px;
   right: -2px;
   border-radius: 0px 8px 0px 55px;
@@ -1004,7 +998,7 @@ p {
 .ud-single-pricing .ud-pricing-body li {
   font-weight: 500;
   font-size: 15px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .ud-single-pricing .ud-main-btn {
@@ -1252,7 +1246,7 @@ p {
 
 /* ===== Team CSS ===== */
 .ud-team {
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 80px;
 }
 
@@ -1350,7 +1344,7 @@ p {
 
 /* ===== Contact CSS ===== */
 .ud-contact {
-  padding: 120px 0px;
+  padding: 20px 0px;
   position: relative;
 }
 
@@ -1368,7 +1362,7 @@ p {
   top: 0;
   left: 0;
   height: 50%;
-  background: #f3f4fe;
+  background: #f8dd5c;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1378,7 +1372,7 @@ p {
 }
 
 .ud-contact-title {
-  margin-bottom: 150px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -1450,7 +1444,7 @@ p {
   box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   background: var(--white);
-  padding: 60px;
+  padding: 30px;
 }
 
 @media (max-width: 767px) {
@@ -1508,11 +1502,12 @@ p {
 
 /* ===== Footer CSS ===== */
 .ud-footer {
-  background: #f3f4fe;
-  padding-top: 100px;
+  background: #f8dd5c;
+  padding-top: 60px;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  padding-bottom: 3em;
 }
 
 .ud-footer .shape {
@@ -1837,7 +1832,7 @@ p {
 
 @media (max-width: 767px) {
   .ud-blog-grids {
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
 }
@@ -1852,6 +1847,7 @@ p {
 }
 
 .ud-single-blog .ud-blog-image {
+  border: solid 3px #f8dd5c;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -1903,8 +1899,9 @@ p {
 }
 
 .ud-single-blog .ud-blog-desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
+  font-weight: 300;
 }
 
 .ud-related-articles-title {

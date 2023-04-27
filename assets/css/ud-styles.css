@@ -17,6 +17,7 @@ body {
   color: var(--body-color);
   overflow-x: hidden;
   font-weight: 200;
+  letter-spacing: 0px;
 }
 
 * {

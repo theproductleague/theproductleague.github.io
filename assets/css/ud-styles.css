@@ -1,27 +1,7 @@
-/* =======
-
-	Template Name: Play Bootstrap
-	Author: UIdeck
-	Author URI: https://uideck.com/
-	Support: https://github.com/uideck/
-	Version: 1.0
-
-======== */
-/*===========================
-  COMMON css 
-===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.cdnfonts.com/css/tt-hoves-pro-trial");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap");
-@import url("https://fonts.cdnfonts.com/css/sf-mono");
-@font-face {
-  font-family: "metropolis";
-  src: url("../fonts/metropolis-2-cufonfonts-webfont/Metropolis-Regular.woff")
-    format("woff");
-}
 
 :root {
-  --font: "TT Hoves Pro Trial", sans-serif;
+  --font: "Inter", sans-serif;
   --body-color: #000000;
   --heading-color: #000000;
   --primary-color: #3056d3;
@@ -217,7 +197,7 @@ p {
 /* ===== Header CSS ===== */
 .ud-header {
   position: absolute;
-  top: 0;
+  top: 20;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -271,7 +251,7 @@ p {
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: var(--blacke);
+  background-color: var(--black);
   display: block;
   margin: 5px 0;
   position: relative;
@@ -342,11 +322,17 @@ p {
 }
 
 .navbar-nav .nav-item > a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   padding: 25px 8px;
-  position: relative;
+  color: #130d6f;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -359,7 +345,7 @@ p {
 
 .navbar-nav .nav-item > a:hover,
 .navbar-nav .nav-item > a.active {
-  color: rgba(0, 0, 0);
+  color: rgb(19, 13, 111, 0.7);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -532,9 +518,28 @@ p {
 
 /* ===== Hero CSS ===== */
 .ud-hero {
-  /* background: linear-gradient(120deg, #ff9191, #f8dd5c); */
+  /* background-color: #fff; */
+  background: linear-gradient(
+    202.4deg,
+    rgba(248, 221, 92, 0.29) 41.86%,
+    rgba(94, 114, 235, 0.29) 102.41%
+  );
+  /* background: linear-gradient(
+      to right top,
+      rgba(19, 16, 65, 0.7),
+      rgba(19, 16, 65, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80")
+      no-repeat center center fixed; */
   background-size: cover;
-  padding-top: 110px;
+  position: relative;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 120px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -547,7 +552,7 @@ p {
 
 @media (max-width: 767px) {
   .ud-hero {
-    padding-top: 100px;
+    padding-top: 25px;
     background-size: cover;
     background-position: center;
   }
@@ -819,7 +824,7 @@ p {
 
 /* ===== About CSS ===== */
 .ud-about {
-  background: #f8dd5c;
+  background: #130d6f;
   padding: 120px 0;
 }
 
@@ -1503,7 +1508,7 @@ p {
 /* ===== Footer CSS ===== */
 .ud-footer {
   background: #f8dd5c;
-  padding-top: 60px;
+  padding-top: 100px;
   position: relative;
   z-index: 1;
   overflow: hidden;

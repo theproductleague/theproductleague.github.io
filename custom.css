@@ -1,23 +1,107 @@
 @import url("https://fonts.cdnfonts.com/css/sf-mono");
 @import url("https://fonts.cdnfonts.com/css/tt-hoves-pro-trial");
+
+.hero-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 111.99%;
+  text-align: center;
+  background: linear-gradient(266.22deg, #ef4254 8%, #f8dd5c 78.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  text-align: center;
+  background: linear-gradient(266.22deg, #ef4254 8%, #f8dd5c 78.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tiles {
+  /* Active Button */
+  box-sizing: border-box;
+  /* Auto layout */
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  width: 180px;
+  height: 56px;
+  background: #f8dd5c;
+  color: #130d6f;
+  border-radius: 15px;
+  border: 1.5px solid #f8dd5c;
+  font-weight: bold;
+}
+
 .tpl-btn {
-  font-family: "TT Hoves Pro Trial", monospace;
-  background-color: #130d6f;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 17px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  /* Active Button */
+  box-sizing: border-box;
+  /* Auto layout */
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  width: 180px;
+  height: 56px;
+  background: #f8dd5c;
+  color: #130d6f;
+  border-radius: 15px;
+  border: 1.5px solid #f8dd5c;
+}
+
+.tpl-btn-secondary {
+  /* Active Button */
+  box-sizing: border-box;
+  /* Auto layout */
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  width: 180px;
+  height: 56px;
+  background: transparent;
+  color: #130d6f;
+  border-radius: 15px;
+  border: 1.5px solid #130d6f;
 }
 
 .tpl-btn:hover {
-  background-color: #f8dd5c;
+  background-color: #130d6f;
+  color: #f8dd5c;
+  border: 1.5px solid #130d6f;
+}
+
+.tpl-btn-secondary:hover {
+  background-color: transparent;
   color: #130d6f;
-  /* border: solid 1px #130d6f; */
-  font-size: 17px;
+  border: 3.5px solid #130d6f;
+}
+
+.tpl-btn-sec {
+  box-sizing: border-box;
+  /* Auto layout */
+  align-items: center;
+  gap: 10px;
+  width: 180px;
+  height: 56px;
+  background: #0d0745;
+  border-radius: 15px;
+  color: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  border: none;
 }
 
 .csta {
@@ -41,10 +125,81 @@
 }
 
 .team-img {
-  border: solid 3px #f8dd5c;
+  border: solid 3px #130d6f;
 }
 
 .team-img:hover {
-  border: solid 3px #130d6f;
+  border: solid 3px #f8dd5c;
   cursor: pointer;
+}
+
+.vision-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 110%;
+  /* or 55px */
+
+  background: linear-gradient(268.52deg, #f8dd5c 44.1%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.title-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
+  /* or 34px */
+  justify-content: left;
+  color: #ffffff;
+}
+
+.membership-card {
+  background: linear-gradient(
+    202.4deg,
+    rgba(248, 221, 92, 0.29) 41.86%,
+    rgba(94, 114, 235, 0.29) 102.41%
+  );
+  border: 0.5px solid #e3e3e3;
+  border-radius: 20px;
+  width: 22rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 767px) {
+  .membership-card {
+    width: 19rem;
+  }
+}
+
+.mem-img {
+  width: 60%;
+  margin-top: 20px;
+  border-radius: 35px;
+  filter: drop-shadow(2px 5px 7px rgba(0, 0, 0, 0.46));
+}
+
+.mem-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 110%;
+  /* or 29px */
+  color: #0d0745;
+}
+
+.mem-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  /* or 21px */
+  text-align: center;
+  color: #131041;
 }

@@ -477,7 +477,7 @@ p {
     top: 116%;
     left: 0;
     width: 100%;
-    background-color: var(--primary);
+    background-color: var(--white);
     z-index: 8;
     padding: 10px 16px;
   }

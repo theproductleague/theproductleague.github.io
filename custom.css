@@ -42,6 +42,25 @@
   font-weight: bold;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 767px) {
+  .tiles {
+    /* Active Button */
+    box-sizing: border-box;
+    /* Auto layout */
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    width: auto;
+    height: auto;
+    background: #f8dd5c;
+    color: #130d6f;
+    border-radius: 15px;
+    border: 1.5px solid #f8dd5c;
+    font-weight: bold;
+  }
+}
+
 .tpl-btn {
   /* Active Button */
   box-sizing: border-box;
@@ -151,10 +170,9 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 130%;
-  /* or 34px */
-  justify-content: left;
+  text-align: justify;
   color: #ffffff;
 }
 

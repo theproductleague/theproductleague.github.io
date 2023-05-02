@@ -1,35 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Product League at UT Dallas</title>
-
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="The Product League at UT Dallas" />
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
     <meta
-      name="description"
-      content="Building a community of passionate and motivated product management students at UT Dallas"
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+    <!--====== Title ======-->
+    <title>The Product League at UT Dallas</title>
 
     <!--====== Favicon Icon ======-->
     <link
       rel="shortcut icon"
-      href="assets/images/logo/logo.png"
+      href="../assets/images/favicon.svg"
       type="image/svg"
     />
 
-    <!-- ===== All CSS files ===== -->
+    <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
+
+    <!--====== Line Icons css ======-->
     <link rel="stylesheet" href="assets/css/lineicons.css" />
-    <link rel="stylesheet" href="assets/css/ud-styles.css" />
+
+    <!--====== Tiny Slider css ======-->
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+
+    <!--====== gLightBox css ======-->
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
+
   <body>
-    <!-- ====== Header Start ====== -->
-    <header class="ud-header">
+    <!--====== NAVBAR NINE PART START ======-->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <center>
+              <h4 class="modal-title fs-5" id="staticBackdropLabel">
+                The Product League
+              </h4>
+            </center>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <center><h3>Coming Soon!</h3></center>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn primary-btn"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="navbar-area navbar-nine">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -37,149 +90,280 @@
               <a class="navbar-brand" href="index.html">
                 <img width="30%" src="./images/logo.png" alt="Logo" />
               </a>
-              <button class="navbar-toggler">
-                <span class="toggler-icon"> </span>
-                <span class="toggler-icon"> </span>
-                <span class="toggler-icon"> </span>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNine"
+                aria-controls="navbarNine"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
               </button>
 
-              <div class="navbar-collapse">
-                <ul id="nav" class="navbar-nav mx-auto">
+              <div
+                class="collapse navbar-collapse sub-menu-bar"
+                id="navbarNine"
+              >
+                <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#home">Home</a>
+                    <a class="page-scroll active" href="#hero-area">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#about">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                      class="page-scroll"
+                      href="#"
+                      >Events</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#services">Membership</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#about">About</a>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                      class="nav-link"
+                      href="#"
+                      >Resources</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#features">Membership</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#team">Team</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#contact">Contact Us</a>
+                    <a class="page-scroll" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
 
-              <div class="navbar-btn d-none d-sm-inline-block">
-                <center>
-                  <a target="_blank" href="https://forms.gle/fE92FVtiSWG6Di5i6"
-                    ><button type="button" class="tpl-btn fw-bold">
-                      Join Waitlist
-                    </button></a
+              <div class="navbar-btn d-none d-lg-inline-block">
+                <div class="button">
+                  <a
+                    target="_blank"
+                    href="https://forms.gle/cafvN6xb1mxocVwU6"
+                    class="btn primary-btn"
+                    >Get Started</a
                   >
-                </center>
+                </div>
               </div>
             </nav>
+            <!-- navbar -->
           </div>
         </div>
+        <!-- row -->
       </div>
-    </header>
+      <!-- container -->
+    </section>
 
-    <!-- ====== Header End ====== -->
+    <!--====== NAVBAR NINE PART ENDS ======-->
 
-    <!-- ====== Hero Start ====== -->
-    <!-- ====== Hero Start ====== -->
-    <section class="ud-hero vh-100" id="home">
-      <div class="container my-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
-          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <p class="display-4 lh-1 mb-4 fw-bold" style="color: #130d6f">
-              The Product League
-            </p>
-            <p class="fs-4 lh-1 mb-4" style="color: #130d6f">
-              Accelerate your Product Journey.
-            </p>
-            <p class="fs-5 lead mb-3 fw-normal" style="color: #130d6f">
-              Join our community of passionate product managers for exclusive
-              resources, mentorship and networking events
-            </p>
+    <!--====== SIDEBAR PART START ======-->
 
-            <div
-              class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 mt-3"
-            >
-              <a target="_blank" href="https://forms.gle/fE92FVtiSWG6Di5i6"
-                ><button
-                  type="button"
-                  class="tpl-btn btn-lg px-4 me-md-2 fw-bold"
+    <div class="overlay-left"></div>
+
+    <!--====== SIDEBAR PART ENDS ======-->
+
+    <!-- Start header Area -->
+    <section id="hero-area" class="header-area header-eight min-vh-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="header-content">
+              <h1>The Product League at UT Dallas</h1>
+              <p class="fs-2 fw-bold" style="color: #130d6f; opacity: 1">
+                Accelarate your Product Journey
+              </p>
+              <p class="">
+                Join our community of passionate product managers for exclusive
+                resources, mentorship and networking events.
+              </p>
+              <!-- <div class="button">
+                <a href="javascript:void(0)" class="btn primary-btn"
+                  >Get Started</a
                 >
-                  Join Waitlist
-                </button></a
-              >
-
-              <a href="#"
-                ><button
-                  type="button"
-                  class="tpl-btn-secondary btn-lg px-4 fw-bold"
+                <a
+                  href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
+                  class="glightbox video-button"
                 >
-                  Events
-                </button></a
-              >
+                  <span class="btn icon-btn rounded-full">
+                    <i class="lni lni-play"></i>
+                  </span>
+                  <span class="text">Watch Intro</span>
+                </a>
+              </div> -->
+              <div class="d-none d-lg-inline-block">
+                <div class="button">
+                  <a
+                    target="_blank"
+                    href="https://forms.gle/cafvN6xb1mxocVwU6"
+                    class="btn primary-btn"
+                    >Get Started</a
+                  >
+                  <a
+                    href="javascript:void(0)"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    class="btn primary-btn-outline"
+                    >Events</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 rounded-circle">
-            <img
-              class="rounded-lg-3"
-              src="./images/hero.svg"
-              alt=""
-              width="720"
-            />
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="header-image">
+              <img src="./images/hero.svg" alt="#" />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ====== Hero End ====== -->
-    <!-- ====== About Start ====== -->
-    <section id="about" class="ud-about">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <p class="mb-4 vision-title">Our Vision</p>
-            <p class="fs-5 fw-normal title-desc">
-              Our vision is to create a community of passionate and motivated
-              product management students who are equipped with the knowledge,
-              skills, and resources necessary to succeed in their careers.
-              <br />
-              We aim to foster a collaborative and inclusive environment where
-              students can learn, network, and grow as product managers through
-              various engagement activities like case competitions, networking
-              fairs, book-reading sessions etc.
-            </p>
-          </div>
-          <div class="col">
-            <center>
-              <div
-                class="rounded-circle"
-                style="
-                  background-color: rgba(94, 114, 235, 0.58);
-                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                  width: 320px;
-                  height: 320px;
-                "
-              >
-                <center>
-                  <img class="rounded-circle" src="./images/tpl.svg" alt="" />
-                </center>
-              </div>
-            </center>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== About End ====== -->
+    <!-- End header Area -->
 
-    <!-- ====== Features Start ====== -->
-    <section id="features" class="ud-features">
+    <!--====== ABOUT FIVE PART START ======-->
+
+    <section id="about" class="about-area about-five">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <center>
-              <div class="ud-section-title">
-                <h2 class="fw-bold">Why become a member?</h2>
-                <p class="col-lg-12 fs-6 mt-2">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12">
+            <div class="about-five-content">
+              <p class="fs-1 fw-bold text-white">Our Vision</p>
+              <div class="about-five-tab">
+                <div class="tab-content" id="nav-tabContent">
+                  <p class="text-white">
+                    Our vision is to create a community of passionate and
+                    motivated product management students who are equipped with
+                    the knowledge, skills, and resources necessary to succeed in
+                    their careers.
+                  </p>
+                  <p class="text-white">
+                    We aim to foster a collaborative and inclusive environment
+                    where students can learn, network, and grow as product
+                    managers through various engagement activities like case
+                    competitions, networking fairs, book-reading sessions etc.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="about-image-five">
+              <svg
+                class="shape"
+                width="106"
+                height="134"
+                viewBox="0 0 106 134"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="1.66654" cy="1.66679" r="1.66667" fill="#DADADA" />
+                <circle cx="1.66654" cy="16.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="1.66654" cy="31.0001" r="1.66667" fill="#DADADA" />
+                <circle cx="1.66654" cy="45.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="1.66654" cy="60.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="1.66654" cy="88.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="1.66654" cy="117.667" r="1.66667" fill="#DADADA" />
+                <circle cx="1.66654" cy="74.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="1.66654" cy="103" r="1.66667" fill="#DADADA" />
+                <circle cx="1.66654" cy="132" r="1.66667" fill="#DADADA" />
+                <circle cx="16.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
+                <circle cx="16.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="16.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
+                <circle cx="16.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="16.333" cy="60.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="16.333" cy="88.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="16.333" cy="117.667" r="1.66667" fill="#DADADA" />
+                <circle cx="16.333" cy="74.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="16.333" cy="103" r="1.66667" fill="#DADADA" />
+                <circle cx="16.333" cy="132" r="1.66667" fill="#DADADA" />
+                <circle cx="30.9998" cy="1.66679" r="1.66667" fill="#DADADA" />
+                <circle cx="74.6665" cy="1.66679" r="1.66667" fill="#DADADA" />
+                <circle cx="30.9998" cy="16.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="74.6665" cy="16.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="30.9998" cy="31.0001" r="1.66667" fill="#DADADA" />
+                <circle cx="74.6665" cy="31.0001" r="1.66667" fill="#DADADA" />
+                <circle cx="30.9998" cy="45.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="74.6665" cy="45.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="31" cy="60.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="74.6668" cy="60.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="31" cy="88.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="74.6668" cy="88.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="31" cy="117.667" r="1.66667" fill="#DADADA" />
+                <circle cx="74.6668" cy="117.667" r="1.66667" fill="#DADADA" />
+                <circle cx="31" cy="74.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="74.6668" cy="74.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="31" cy="103" r="1.66667" fill="#DADADA" />
+                <circle cx="74.6668" cy="103" r="1.66667" fill="#DADADA" />
+                <circle cx="31" cy="132" r="1.66667" fill="#DADADA" />
+                <circle cx="74.6668" cy="132" r="1.66667" fill="#DADADA" />
+                <circle cx="45.6665" cy="1.66679" r="1.66667" fill="#DADADA" />
+                <circle cx="89.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
+                <circle cx="45.6665" cy="16.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="89.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="45.6665" cy="31.0001" r="1.66667" fill="#DADADA" />
+                <circle cx="89.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
+                <circle cx="45.6665" cy="45.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="89.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="45.6665" cy="60.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="89.3333" cy="60.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="45.6665" cy="88.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="89.3333" cy="88.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="45.6665" cy="117.667" r="1.66667" fill="#DADADA" />
+                <circle cx="89.3333" cy="117.667" r="1.66667" fill="#DADADA" />
+                <circle cx="45.6665" cy="74.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="89.3333" cy="74.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="45.6665" cy="103" r="1.66667" fill="#DADADA" />
+                <circle cx="89.3333" cy="103" r="1.66667" fill="#DADADA" />
+                <circle cx="45.6665" cy="132" r="1.66667" fill="#DADADA" />
+                <circle cx="89.3333" cy="132" r="1.66667" fill="#DADADA" />
+                <circle cx="60.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
+                <circle cx="104" cy="1.66679" r="1.66667" fill="#DADADA" />
+                <circle cx="60.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="104" cy="16.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="60.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
+                <circle cx="104" cy="31.0001" r="1.66667" fill="#DADADA" />
+                <circle cx="60.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="104" cy="45.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="60.333" cy="60.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="104" cy="60.3335" r="1.66667" fill="#DADADA" />
+                <circle cx="60.333" cy="88.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="104" cy="88.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="60.333" cy="117.667" r="1.66667" fill="#DADADA" />
+                <circle cx="104" cy="117.667" r="1.66667" fill="#DADADA" />
+                <circle cx="60.333" cy="74.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="104" cy="74.6668" r="1.66667" fill="#DADADA" />
+                <circle cx="60.333" cy="103" r="1.66667" fill="#DADADA" />
+                <circle cx="104" cy="103" r="1.66667" fill="#DADADA" />
+                <circle cx="60.333" cy="132" r="1.66667" fill="#DADADA" />
+                <circle cx="104" cy="132" r="1.66667" fill="#DADADA" />
+              </svg>
+              <img width="60%" src="./images/tpl.svg" alt="about" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== ABOUT FIVE PART ENDS ======-->
+
+    <!-- ===== service-area start ===== -->
+    <section id="services" class="services-area services-eight">
+      <!--======  Start Section Title Five ======-->
+      <div class="section-title-five">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="content">
+                <h2 class="fw-bold">Why become a member</h2>
+                <p>
                   With our membership program, you can gain access to special
                   advantages and join a dynamic community of like-minded people.
                   Our membership offers everything you need to advance in your
@@ -187,172 +371,205 @@
                   premium tools.
                 </p>
               </div>
-            </center>
-          </div>
-        </div>
-
-        <section id="membership vw-100" class="ud-blog-grids">
-          <div class="row">
-            <div class="col-md-12">
-              <div
-                id="card-scroll"
-                class="card-deck d-flex flex-nowrap overflow-auto gap-3"
-              >
-                <div class="membership-card card">
-                  <img
-                    src="https://images.unsplash.com/photo-1583161442702-8c283bba7e46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    class="card-img-top mx-auto d-block p-3 mem-img mb-2"
-                    alt="your-image-alt"
-                  />
-                  <div class="card-body text-center">
-                    <p class="card-title mem-title">Career Networking</p>
-                    <p class="card-text mem-desc px-3">
-                      To provide students with opportunities to connect with top
-                      employers, showcase their skills and experience & land
-                      their dream jobs.
-                    </p>
-                    <center>
-                      <button href="#" class="tpl-btn-sec mb-2 mt-5">
-                        View Events
-                      </button>
-                    </center>
-                  </div>
-                </div>
-                <div class="membership-card card">
-                  <img
-                    src="https://images.pexels.com/photos/4623496/pexels-photo-4623496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    class="card-img-top mx-auto d-block p-3 mem-img mb-2"
-                    alt="your-image-alt"
-                  />
-                  <div class="card-body text-center">
-                    <p class="card-title mem-title">Productathons</p>
-                    <p class="card-text mb-auto mem-desc px-3">
-                      Productathons enable the member to foster creativity and
-                      problem-solving through real-world challenges and expert
-                      feedback
-                    </p>
-                    <center>
-                      <button href="#" class="tpl-btn-sec mb-2 mt-5">
-                        View Productathons
-                      </button>
-                    </center>
-                  </div>
-                </div>
-                <div class="membership-card card">
-                  <img
-                    src="https://images.unsplash.com/photo-1507209696998-3c532be9b2b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    class="card-img-top mx-auto d-block p-3 mem-img mb-2"
-                    alt="your-image-alt"
-                  />
-                  <div class="card-body text-center">
-                    <p class="card-title mem-title">1:1 Mentoring</p>
-                    <p class="card-text mb-auto mem-desc px-3">
-                      Personalized guidance & support for members from
-                      experienced product managers to help you achieve your
-                      career goals.
-                    </p>
-                    <center>
-                      <button href="#" class="tpl-btn-sec mb-2 mt-5">
-                        Book your Session
-                      </button>
-                    </center>
-                  </div>
-                </div>
-                <div class="membership-card card">
-                  <img
-                    src="https://images.unsplash.com/photo-1572061485775-deab4249c8b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
-                    class="card-img-top mx-auto d-block p-3 mem-img mb-2"
-                    alt="your-image-alt"
-                  />
-                  <div class="card-body text-center">
-                    <p class="card-title mem-title">Book-Reading Sessions</p>
-                    <p class="card-text mb-auto mem-desc px-3">
-                      Each month, our exclusive group of members will dive deep
-                      into the most compelling product books out there, and
-                      engage in lively discussions.
-                    </p>
-                    <center>
-                      <button href="#" class="tpl-btn-sec mb-2 mt-5">
-                        Join our Club
-                      </button>
-                    </center>
-                  </div>
-                </div>
-                <div class="membership-card card">
-                  <img
-                    src="https://images.unsplash.com/photo-1561489396-888724a1543d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    class="card-img-top mx-auto d-block p-3 mem-img mb-2"
-                    alt="your-image-alt"
-                  />
-                  <div class="card-body text-center">
-                    <p class="card-title mem-title">Panel Discussions</p>
-                    <p class="card-text mb-auto mem-desc px-3">
-                      Attend speaker events and trainings on topics related to
-                      product management, such as product design, market
-                      research etc.
-                    </p>
-                    <center>
-                      <button href="#" class="tpl-btn-sec mb-2 mt-5">
-                        View Discussions
-                      </button>
-                    </center>
-                  </div>
-                </div>
-                <div class="membership-card card">
-                  <img
-                    src="https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    class="card-img-top mx-auto d-block p-3 mem-img mb-2"
-                    alt="your-image-alt"
-                  />
-                  <div class="card-body text-center">
-                    <p class="card-title mem-title">Newsletters</p>
-                    <p class="card-text mb-2 mem-desc px-3">
-                      Join our community of subscribers and gain exclusive
-                      access to expert content that will elevate your knowledge
-                      and skills.
-                    </p>
-                  </div>
-                  <center>
-                    <button href="#" class="tpl-btn-sec mb-4">Subscribe</button>
-                  </center>
-                </div>
-              </div>
             </div>
           </div>
-          <style>
-            .card-deck {
-              -webkit-overflow-scrolling: touch;
-            }
-
-            .card {
-              flex: 0 0 auto;
-              margin-right: 10px;
-              margin-bottom: 20px;
-            }
-
-            .card-img-top {
-              height: 200px;
-              object-fit: cover;
-            }
-
-            @media (min-width: 576px) {
-              .card-deck {
-                display: flex;
-              }
-            }
-          </style>
-        </section>
+          <!-- row -->
+        </div>
+        <!-- container -->
       </div>
-    </section>
-    <!-- ====== Features End ====== -->
+      <!--======  End Section Title Five ======-->
+      <div class="row px-4">
+        <div class="col-md-12">
+          <div
+            id="card-scroll"
+            class="card-deck d-flex flex-nowrap overflow-auto gap-3"
+          >
+            <div class="membership-card card">
+              <img
+                src="https://images.unsplash.com/photo-1583161442702-8c283bba7e46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                class="card-img-top mx-auto d-block p-3 mem-img mb-2"
+                alt="your-image-alt"
+              />
+              <div class="card-body text-center">
+                <p class="card-title mem-title">Career Networking</p>
+                <p class="card-text mem-desc px-3">
+                  To provide students with opportunities to connect with top
+                  employers, showcase their skills and experience & land their
+                  dream jobs.
+                </p>
+                <center>
+                  <button
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    class="btn primary-btn mb-2 mt-5"
+                  >
+                    View Events
+                  </button>
+                </center>
+              </div>
+            </div>
+            <div class="membership-card card">
+              <img
+                src="https://images.pexels.com/photos/4623496/pexels-photo-4623496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="card-img-top mx-auto d-block p-3 mem-img mb-2"
+                alt="your-image-alt"
+              />
+              <div class="card-body text-center">
+                <p class="card-title mem-title">Productathons</p>
+                <p class="card-text mb-auto mem-desc px-3">
+                  Productathons enable the member to foster creativity and
+                  problem-solving through real-world challenges and expert
+                  feedback
+                </p>
+                <center>
+                  <button
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    class="btn primary-btn mb-2 mt-5"
+                  >
+                    View Productathons
+                  </button>
+                </center>
+              </div>
+            </div>
+            <div class="membership-card card">
+              <img
+                src="https://images.unsplash.com/photo-1507209696998-3c532be9b2b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                class="card-img-top mx-auto d-block p-3 mem-img mb-2"
+                alt="your-image-alt"
+              />
+              <div class="card-body text-center">
+                <p class="card-title mem-title">1:1 Mentoring</p>
+                <p class="card-text mb-auto mem-desc px-3">
+                  Personalized guidance & support for members from experienced
+                  product managers to help you achieve your career goals.
+                </p>
+                <center>
+                  <button
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    class="btn primary-btn mb-2 mt-5"
+                  >
+                    Book your Session
+                  </button>
+                </center>
+              </div>
+            </div>
+            <div class="membership-card card">
+              <img
+                src="https://images.unsplash.com/photo-1572061485775-deab4249c8b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
+                class="card-img-top mx-auto d-block p-3 mem-img mb-2"
+                alt="your-image-alt"
+              />
+              <div class="card-body text-center">
+                <p class="card-title mem-title">Book-Reading</p>
+                <p class="card-text mb-auto mem-desc px-3">
+                  Each month, our exclusive group of members will dive deep into
+                  the most compelling product books out there, and engage in
+                  lively discussions.
+                </p>
+                <center>
+                  <button
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    class="btn primary-btn mb-2 mt-5"
+                  >
+                    Join our Club
+                  </button>
+                </center>
+              </div>
+            </div>
+            <div class="membership-card card">
+              <img
+                src="https://images.unsplash.com/photo-1561489396-888724a1543d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                class="card-img-top mx-auto d-block p-3 mem-img mb-2"
+                alt="your-image-alt"
+              />
+              <div class="card-body text-center">
+                <p class="card-title mem-title">Panel Discussions</p>
+                <p class="card-text mb-auto mem-desc px-3">
+                  Attend speaker events and trainings on topics related to
+                  product management, such as product design, market research
+                  etc.
+                </p>
+                <center>
+                  <button
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    class="btn primary-btn mb-2 mt-5"
+                  >
+                    View Discussions
+                  </button>
+                </center>
+              </div>
+            </div>
+            <div class="membership-card card">
+              <img
+                src="https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                class="card-img-top mx-auto d-block p-3 mem-img mb-2"
+                alt="your-image-alt"
+              />
+              <div class="card-body text-center">
+                <p class="card-title mem-title">Newsletters</p>
+                <p class="card-text mb-2 mem-desc px-3">
+                  Join our community of subscribers and gain exclusive access to
+                  expert content that will elevate your knowledge and skills.
+                </p>
+              </div>
+              <center>
+                <button
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  class="btn primary-btn mb-4"
+                >
+                  Subscribe
+                </button>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .card-deck {
+          -webkit-overflow-scrolling: touch;
+        }
 
-    <!-- ====== Pricing Start ====== -->
-    <section id="pricing" class="ud-pricing">
+        .card {
+          flex: 0 0 auto;
+          margin-right: 10px;
+          margin-bottom: 20px;
+        }
+
+        .card-img-top {
+          height: 200px;
+          object-fit: cover;
+        }
+
+        @media (min-width: 576px) {
+          .card-deck {
+            display: flex;
+          }
+        }
+      </style>
+    </section>
+    <!-- ===== service-area end ===== -->
+
+    <!-- Start Pricing  Area -->
+    <section id="pricing" class="pricing-area pricing-fourteen">
       <div class="container">
         <div class="row">
           <div class="col-sm-5 col-md-6 offset-md-0">
             <a target="_blank" href="https://forms.gle/fE92FVtiSWG6Di5i6"
-              ><button href="#" class="tpl-btn-sec mb-5 mt-0">
+              ><button
+                href="https://forms.gle/cafvN6xb1mxocVwU6"
+                class="btn primary-btn mb-5 mt-0"
+              >
                 Sign Up Now!
               </button></a
             >
@@ -419,7 +636,7 @@
                 shape="circle"
                 coords="150,500,50"
                 target="_blank"
-                href="https://forms.gle/fE92FVtiSWG6Di5i6"
+                href="https://forms.gle/cafvN6xb1mxocVwU6"
                 alt="Clickable area"
               />
             </map>
@@ -437,375 +654,283 @@
         </div>
       </center>
     </section>
-    <!-- ====== Pricing End ====== -->
-    <!-- ====== Team Start ====== -->
-    <section id="team" class="ud-team">
+    <!--/ End Pricing  Area -->
+
+    <!-- ========================= contact-section start ========================= -->
+    <section id="contact" class="contact-section">
       <div class="container">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
+        <div class="row">
+          <div class="col-xl-7">
+            <div class="contact-item-wrapper">
               <div class="row">
-                <div class="col-lg-12">
-                  <div class="ud-section-title mx-auto text-center">
-                    <p class="fs-1 mb-4 fw-bold">Our Team</p>
-                    <p class="fs-5 fw-normal lh-base">
-                      We are enthusiasts committed to providing you with the
-                      best of product management.
-                    </p>
+                <div class="col-xl-10 col-lg-8 mx-auto">
+                  <div class="section-title">
+                    <h2>Contact Us</h2>
+                    <img
+                      style="background-color: white"
+                      width="60%"
+                      class="p-4"
+                      src="./images/contact.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
-              <center>
-                <div class="container text-center">
-                  <div class="card border-0 mb-4">
-                    <center>
+            </div>
+          </div>
+          <div class="col-xl-5">
+            <div class="contact-item-wrapper">
+              <div class="row">
+                <div class="col-12 col-md-6 col-xl-12">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="lni lni-envelope"></i>
+                    </div>
+                    <div class="contact-content">
+                      <h5>Contact</h5>
+
+                      <a href="mailto: team@theproductleague.com"
+                        ><p class="fs-5">team@theproductleague.com</p></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-12">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="lni lni-map-marker"></i>
+                    </div>
+                    <div class="contact-content">
+                      <h5>Address</h5>
+                      <p class="fs-5">
+                        800 W Campbell Rd, Richardson, TX 75080
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= contact-section end ========================= -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer-area footer-eleven">
+      <!-- Start Footer Top -->
+      <div class="footer-top">
+        <div class="container">
+          <div class="inner-content">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12">
+                <h5 class="text-white">The Product League.</h5>
+                <!-- Single Widget -->
+                <div class="footer-widget f-about">
+                  <div class="logo">
+                    <a href="index.html">
+                      <img
+                        width="80%"
+                        src="./images/logo.png"
+                        alt="#"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <br />
+                  <h6 class="text-white">Prepare. Network. Innovate.</h6>
+
+                  <p style="color: #130d6f" class="copyright-text">
+                    <span style="color: #130d6f">© 2024 Ayro UI.</span>Designed
+                    and Developed by
+                    <a
+                      style="color: #130d6f"
+                      href="javascript:void(0)"
+                      rel="nofollow"
+                    >
+                      Ayro UI
+                    </a>
+                  </p>
+                </div>
+                <!-- End Single Widget -->
+              </div>
+              <div class="col-lg-2 col-md-6 col-12">
+                <!-- Single Widget -->
+                <div class="footer-widget f-link">
+                  <h5>Relevant Links</h5>
+                  <ul>
+                    <li><a href="#hero-area">Home</a></li>
+                    <li>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        href="#"
+                        >Events</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        href="#"
+                        >Resources</a
+                      >
+                    </li>
+                    <li><a href="#services">Membership</a></li>
+                  </ul>
+                </div>
+                <!-- End Single Widget -->
+              </div>
+              <div class="col-lg-2 col-md-6 col-12">
+                <!-- Single Widget -->
+                <div class="footer-widget f-link">
+                  <h5>Support</h5>
+                  <ul>
+                    <li>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        href="#)"
+                        >FAQs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        href="javascript:void(0)"
+                        >Pricing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        href="javascript:void(0)"
+                        >Refund Policy</a
+                      >
+                    </li>
+                    <li><a href="#contact">Contact Us</a></li>
+                  </ul>
+                </div>
+                <!-- End Single Widget -->
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <!-- Single Widget -->
+                <div class="footer-widget newsletter">
+                  <div class="row">
+                    <div class="col-6">
+                      <center>
+                        <a
+                          target="_blank"
+                          href="https://instagram.com/theproductleague"
+                        >
+                          <i
+                            style="font-size: 3em; color: #fff"
+                            class="bi bi-instagram"
+                          ></i
+                        ></a>
+                      </center>
+                    </div>
+                    <br />
+                    <div class="col-6">
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        href="javascript:void(0)"
+                        ><i
+                          style="font-size: 3em; color: #fff"
+                          class="bi bi-discord"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-6">
+                      <center>
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/company/theproductleague/"
+                          ><i
+                            style="font-size: 3em; color: #fff"
+                            class="bi bi-linkedin"
+                          ></i
+                        ></a>
+                      </center>
+                    </div>
+                    <br />
+                    <div class="col-6">
                       <a
                         target="_blank"
-                        href="https://www.linkedin.com/in/vasantgondhalekar/"
-                        ><img
-                          style="width: 200px; height: 200px; object-fit: cover"
-                          src="./assets/images/team/vasant.jpeg"
-                          class="card-img-top rounded-circle team-img"
-                          alt="Placeholder Image"
-                      /></a>
-                    </center>
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">
-                        Prof. Vasant Gondhalekar
-                      </h5>
-                      <div class="card-text text-muted fw-bold">
-                        Faculty Advisor
-                      </div>
-                      <a
-                        href="https://www.linkedin.com/in/vasantgondhalekar/"
-                        target="_blank"
-                        ><i class="text-black lni lni-linkedin-original"></i
+                        href="mailto: team@theproductleague.com"
+                        ><i
+                          style="font-size: 3em; color: #fff"
+                          class="bi bi-envelope-fill"
+                        ></i
                       ></a>
                     </div>
                   </div>
                 </div>
-              </center>
 
-              <br />
-              <div class="container text-center">
-                <div class="row">
-                  <div class="col gap-4">
-                    <div class="card border-0 mb-4">
-                      <a
-                        target="_blank"
-                        href="https://www.linkedin.com/in/kps25"
-                        ><img
-                          style="width: 650px; height: 180px; object-fit: cover"
-                          src="./assets/images/team/karan.jpeg"
-                          class="card-img-top rounded-circle team-img"
-                          alt="..."
-                      /></a>
-                      <div class="card-body text-center">
-                        <h5 class="card-title mb-0 fw-bold">
-                          Karan Pratap Singh
-                        </h5>
-                        <div class="card-text text-muted fw-bold">
-                          President
-                        </div>
-                        <a
-                          href="https://www.linkedin.com/in/kps25"
-                          target="_blank"
-                          ><i class="text-black lni lni-linkedin-original"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card border-0 mb-4">
-                      <a
-                        target="_blank"
-                        href="https://www.linkedin.com/in/manishrramchandani"
-                        ><img
-                          style="width: 650px; height: 180px; object-fit: cover"
-                          src="./assets/images/team/manish.jpeg"
-                          class="card-img-top img-fluid rounded-circle team-img"
-                          alt="..."
-                      /></a>
-                      <div class="card-body text-center">
-                        <h5 class="card-title mb-0 fw-bold">
-                          Manish Ramchandani
-                        </h5>
-                        <div class="card-text text-muted fw-bold">
-                          VP of Treasury
-                        </div>
-                        <a
-                          href="https://www.linkedin.com/in/manishrramchandani"
-                          target="_blank"
-                          ><i class="text-black lni lni-linkedin-original"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card border-0 mb-4">
-                      <a
-                        target="_blank"
-                        href="https://www.linkedin.com/in/sanatanshrivastava"
-                        ><img
-                          style="width: 650px; height: 180px; object-fit: cover"
-                          src="./assets/images/team/sanatan.jpeg"
-                          class="card-img-top rounded-circle team-img"
-                          alt="..."
-                      /></a>
-                      <div class="card-body text-center">
-                        <h5 class="card-title mb-0 fw-bold">
-                          Sanatan Shrivastava
-                        </h5>
-                        <div class="card-text text-muted fw-bold">
-                          VP of WebTech
-                        </div>
-                        <a
-                          href="https://www.linkedin.com/in/sanatanshrivastava"
-                          target="_blank"
-                          ><i class="text-black lni lni-linkedin-original"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card border-0 mb-4">
-                      <a
-                        target="_blank"
-                        href="https://www.linkedin.com/in/karankaul03"
-                        ><img
-                          style="width: 650px; height: 180px; object-fit: cover"
-                          src="./assets/images/team/karankaul.jpeg"
-                          class="card-img-top rounded-circle team-img"
-                          alt="..."
-                      /></a>
-                      <div class="card-body text-center">
-                        <h5 class="card-title mb-0 fw-bold">Karan Kaul</h5>
-                        <div class="card-text text-muted fw-bold">
-                          VP of Strategy
-                        </div>
-                        <a
-                          href="https://www.linkedin.com/in/karankaul03"
-                          target="_blank"
-                          ><i class="text-black lni lni-linkedin-original"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card border-0 mb-4">
-                      <a
-                        target="_blank"
-                        href="https://www.linkedin.com/in/vhadri"
-                        ><img
-                          style="width: 650px; height: 180px; object-fit: cover"
-                          src="./assets/images/team/visar.jpeg "
-                          class="card-img-top rounded-circle team-img"
-                          alt="..."
-                      /></a>
-                      <div class="card-body text-center">
-                        <h5 class="card-title mb-0 fw-bold">Visar Hadri</h5>
-                        <div class="card-text text-muted fw-bold">
-                          VP of Growth
-                        </div>
-                        <a
-                          href="https://www.linkedin.com/in/vhadri"
-                          target="_blank"
-                          ><i class="text-black lni lni-linkedin-original"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <!-- End Single Widget -->
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ====== Team End ====== -->
-
-    <!-- ====== Contact Start ====== -->
-    <section id="contact" class="ud-contact">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-8 col-lg-7">
-            <div class="ud-contact-content-wrapper">
-              <div class="ud-contact-title">
-                <p class="fs-1 mb-4 fw-light">Contact Us</p>
-                <p class="fs-4 fw-light lh-base">
-                  Want to connect with us?
-                  <br />
-                  Drop us a message, and we will reach out to you!
-                </p>
-              </div>
-              <div class="ud-contact-info-wrapper">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="card bg-light border-0">
-                      <div class="card-body">
-                        <div class="custom-alert" role="alert">
-                          <center>GENERAL QUERIES</center>
-                        </div>
-                        <br />
-                        <h5 class="card-title">Talk to our support</h5>
-                        <p class="card-text mt-3 mb-3 text-black-50">
-                          Need to chat? No problem. Our teams will reach out to
-                          you within 24 hours.
-                        </p>
-                        <button href="#" class="tpl-btn">Support Team</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="card bg-light border-0">
-                      <div class="card-body">
-                        <div class="custom-alert" role="alert">
-                          <center>PAYEMENT QUERIES</center>
-                        </div>
-                        <br />
-                        <h5 class="card-title">Payment Issues?</h5>
-                        <p class="card-text mt-3 mb-3 text-black-50">
-                          Ecountering any issues with your payment? Mail us and
-                          our billing team will reach out to you.
-                        </p>
-                        <button href="#" class="tpl-btn">Submit Request</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div
-              class="ud-contact-form-wrapper wow fadeInUp"
-              data-wow-delay=".2s"
-            >
-              <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-              <iframe
-                class="airtable-embed airtable-dynamic-height"
-                src="https://airtable.com/embed/shrY8azJTdFpM3Eff?backgroundColor=purple"
-                frameborder="0"
-                onmousewheel=""
-                width="100%"
-                height="auto"
-                style="background: transparent; border: 1px solid #ccc"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== Contact End ====== -->
-
-    <!-- ====== Footer Start ====== -->
-    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
-      <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col">
-            <p class="fs-4 mb-3">Links</p>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="fs-5 mb-2 csta">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="fs-5 mb-2 csta">Features</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="fs-5 mb-2 csta">Membership</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="fs-5 mb-2 csta"
-                  ><p>
-                    FAQs<span class="badge text-black">Coming Soon</span>
-                  </p></a
-                >
-              </li>
-              <li class="nav-item mb-2 csta">
-                <a href="#" class="fs-5 mb-2">About</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <form>
-              <p class="fs-4 mb-2">The Product League</p>
-              <br />
-              <img width="20%" src="./images/logoblue.png" alt="" />
-              <br /><br />
-              <p class="fs-5 mb-3">Prepare. Network. Innovate</p>
-            </form>
-          </div>
-          <div class="col">
-            <p class="fs-4 mb-3">Social</p>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="fs-5 mb-2 csta">LinkedIn</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="fs-5 mb-2 csta">Instagram</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="fs-5 mb-2 csta">Membership</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="fs-5 mb-2 csta">Website</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="fs-5 mb-2 csta">Email</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <!--/ End Footer Top -->
     </footer>
-    <!-- ====== Footer End ====== -->
+    <!--/ End Footer Area -->
 
-    <!-- ====== All Javascript Files ====== -->
+    <a href="#" class="scroll-top btn-hover">
+      <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!--====== js ======-->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-      // ==== for menu scroll
-      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+    <script src="assets/js/tiny-slider.js"></script>
 
-      pageLink.forEach((elem) => {
-        elem.addEventListener("click", (e) => {
-          e.preventDefault();
-          document.querySelector(elem.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-            offsetTop: 1 - 60,
-          });
-        });
+    <script>
+      //===== close navbar-collapse when a  clicked
+      let navbarTogglerNine = document.querySelector(
+        ".navbar-nine .navbar-toggler"
+      );
+      navbarTogglerNine.addEventListener("click", function () {
+        navbarTogglerNine.classList.toggle("active");
       });
 
-      // section menu active
-      function onScroll(event) {
-        const sections = document.querySelectorAll(".ud-menu-scroll");
-        const scrollPos =
-          window.pageYOffset ||
-          document.documentElement.scrollTop ||
-          document.body.scrollTop;
+      // ==== left sidebar toggle
+      let sidebarLeft = document.querySelector(".sidebar-left");
+      let overlayLeft = document.querySelector(".overlay-left");
+      let sidebarClose = document.querySelector(".sidebar-close .close");
 
-        for (let i = 0; i < sections.length; i++) {
-          const currLink = sections[i];
-          const val = currLink.getAttribute("href");
-          const refElement = document.querySelector(val);
-          const scrollTopMinus = scrollPos + 73;
-          if (
-            refElement.offsetTop <= scrollTopMinus &&
-            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-          ) {
-            document
-              .querySelector(".ud-menu-scroll")
-              .classList.remove("active");
-            currLink.classList.add("active");
-          } else {
-            currLink.classList.remove("active");
-          }
-        }
-      }
+      overlayLeft.addEventListener("click", function () {
+        sidebarLeft.classList.toggle("open");
+        overlayLeft.classList.toggle("open");
+      });
+      sidebarClose.addEventListener("click", function () {
+        sidebarLeft.classList.remove("open");
+        overlayLeft.classList.remove("open");
+      });
 
-      window.document.addEventListener("scroll", onScroll);
+      // ===== navbar nine sideMenu
+      let sideMenuLeftNine = document.querySelector(".navbar-nine .menu-bar");
+
+      sideMenuLeftNine.addEventListener("click", function () {
+        sidebarLeft.classList.add("open");
+        overlayLeft.classList.add("open");
+      });
+
+      //========= glightbox
+      GLightbox({
+        href: "https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM",
+        type: "video",
+        source: "youtube", //vimeo, youtube or local
+        width: 900,
+        autoplayVideos: true,
+      });
     </script>
   </body>
 </html>

@@ -276,6 +276,7 @@ p {
 .primary-btn-outline {
   border-color: #130d6f;
   color: #130d6f;
+  border-radius: 15px;
 }
 .active.primary-btn-outline,
 .primary-btn-outline:hover,

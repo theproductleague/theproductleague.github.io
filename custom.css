@@ -144,12 +144,29 @@
 }
 
 .team-img {
-  border: solid 3px #130d6f;
+  border-radius: 20px;
+  height: auto;
 }
 
 .team-img:hover {
-  border: solid 3px #f8dd5c;
   cursor: pointer;
+}
+
+.team-img-title {
+  margin-top: 12px;
+  color: #130d6f;
+  font-weight: 600;
+  font-size: 18px;
+}
+.team-img-title a {
+  color: #130d6f;
+}
+
+.team-role {
+  margin-top: 8px;
+  color: #130d6f;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .vision-title {

@@ -1241,6 +1241,7 @@ p {
 }
 @media (max-width: 767px) {
   .about-image-five {
+    margin-top: 80px;
     margin-bottom: 60px;
     padding-left: 0;
   }

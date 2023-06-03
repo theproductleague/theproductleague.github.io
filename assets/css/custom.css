@@ -1,0 +1,146 @@
+.csta {
+  font-size: larger;
+  font-weight: 300;
+  color: #130d6f;
+  border-radius: 0.7rem;
+}
+
+.custom-a:hover {
+  font-size: larger;
+  /* color: #130d6f; */
+}
+
+.custom-alert {
+  background-color: #f7f0ca;
+  color: #957c00;
+  padding: 10px 1px;
+  font-family: "SF Mono", monospace;
+  font-size: small;
+}
+
+.team-img {
+  border-radius: 20px;
+  height: auto;
+}
+
+.team-img:hover {
+  cursor: pointer;
+}
+
+.team-img-title {
+  margin-top: 12px;
+  color: #130d6f;
+  font-weight: 600;
+  font-size: 18px;
+}
+.team-img-title a {
+  color: #130d6f;
+}
+
+.team-role {
+  margin-top: 8px;
+  color: #130d6f;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.title-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.membership-card {
+  background: #fff;
+  border: 0.5px solid #e3e3e3;
+  border-radius: 20px;
+  width: 22rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 767px) {
+  .membership-card {
+    width: 19rem;
+  }
+}
+
+.mem-img {
+  width: 60%;
+  margin-top: 20px;
+  border-radius: 35px;
+  filter: drop-shadow(2px 5px 7px rgba(0, 0, 0, 0.46));
+}
+
+.mem-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 110%;
+  /* or 29px */
+  color: #0d0745;
+}
+
+.mem-desc {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  /* or 21px */
+  text-align: center;
+  color: #131041;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #0d0745;
+  border: solid 1px #fff;
+}
+
+.tiles {
+  /* Active Button */
+  box-sizing: border-box;
+  /* Auto layout */
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  width: 180px;
+  height: 56px;
+  background: #5e72eb;
+  color: #fff;
+  border-radius: 15px;
+  border: 1.5px solid #5e72eb;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 767px) {
+  .tiles {
+    /* Active Button */
+    box-sizing: border-box;
+    /* Auto layout */
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    width: auto;
+    height: auto;
+    background: #5e72eb;
+    color: #fff;
+    border-radius: 15px;
+    border: 1.5px solid #5e72eb;
+    font-weight: bold;
+  }
+}

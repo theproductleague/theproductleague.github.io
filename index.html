@@ -1,273 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--====== Required meta tags ======-->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>The Product League at UT Dallas</title>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
       name="description"
-      content="Building a community of motivated and passionate students at UT Dallas"
+      content="Building a community of motivated and passionate aspiring product managers at UT Dallas"
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!--====== Title ======-->
-    <title>The Product League at UT Dallas</title>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="./images/logotplbg.png" type="image/svg" />
-
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
-    <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/lineicons.css" />
-
-    <!--====== Tiny Slider css ======-->
-    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
-
-    <!--====== gLightBox css ======-->
-    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="custom.css" />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!--====== NAVBAR NINE PART START ======-->
-    <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      class="fixed-top d-flex align-items-center header-transparent"
     >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <center>
-              <h4 class="modal-title fs-5" id="staticBackdropLabel">
-                The Product League
-              </h4>
-            </center>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <center><h3>Coming Soon!</h3></center>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn primary-btn"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div id="logo">
+          <a class="fs-5 fw-semibold text-black" href="index.html"
+            >The Product League</a
+          >
         </div>
-      </div>
-    </div>
 
-    <section class="navbar-area navbar-nine">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <nav class="navbar navbar-expand-lg">
-              <!-- <a class="navbar-brand" href="index.html">
-                <img src="assets/images/white-logo.svg" alt="Logo" />
-              </a> -->
-              <img style="width: 5em" src="images/about.png" alt="Logo" />
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNine"
-                aria-controls="navbarNine"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active fw-normal" href="#hero"
+                >Home</a
               >
-                <span class="toggler-icon"></span>
-                <span class="toggler-icon"></span>
-                <span class="toggler-icon"></span>
-              </button>
-
-              <div
-                class="collapse navbar-collapse sub-menu-bar"
-                id="navbarNine"
+            </li>
+            <li>
+              <a
+                target="_blank"
+                class="nav-link scrollto fw-normal"
+                href="about.html"
+                >About</a
               >
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="page-scroll active" href="#hero-area">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="page-scroll" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop"
-                      class="page-scroll"
-                      href="#"
-                      >Events</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="page-scroll" href="#services">Membership</a>
-                  </li>
+            </li>
+            <li>
+              <a class="nav-link scrollto fw-normal" href="#services"
+                >Membership</a
+              >
+            </li>
+            <li class="dropdown">
+              <a href="#portfolio"><span>Resources</span> </a>
+            </li>
+            <li>
+              <a class="nav-link scrollto fw-normal" href="#team">Team</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto fw-normal" href="#contact">Contact</a>
+            </li>
 
-                  <li class="nav-item">
-                    <a
-                      data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop"
-                      class="nav-link"
-                      href="#"
-                      >Resources</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="page-scroll" href="#team">Team</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="page-scroll" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="navbar-btn d-none d-lg-inline-block">
-                <div class="button">
-                  <a
-                    target="_blank"
-                    href="https://buy.stripe.com/28o5mcdtg9cA6kgdQS"
-                    class="btn primary-btn"
-                    >Become a Member</a
-                  >
-                </div>
-              </div>
-            </nav>
-            <!-- navbar -->
-          </div>
-        </div>
-        <!-- row -->
+            <li>
+              <a
+                class="nav-link scrollto"
+                href="https://buy.stripe.com/28o5mcdtg9cA6kgdQS"
+                ><strong>Join Us</strong>
+              </a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
       </div>
-      <!-- container -->
-    </section>
+    </header>
+    <!-- End Header -->
 
-    <!--====== NAVBAR NINE PART ENDS ======-->
-
-    <!--====== SIDEBAR PART ENDS ======-->
-
-    <!-- Start header Area -->
-    <section id="hero-area" class="header-area header-eight">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12 col-12">
-            <div class="header-content">
-              <h1>The Product League</h1>
-              <p class="fs-1" style="color: #130d6f; opacity: 1">
-                Accelarate your Product Journey
-              </p>
-              <p class="fw-normal">
-                Join our community of passionate product managers for exclusive
-                resources, mentorship and networking events.
-              </p>
-              <div class="d-none d-lg-inline-block">
-                <div class="button">
-                  <a
-                    target="_blank"
-                    href="https://buy.stripe.com/28o5mcdtg9cA6kgdQS"
-                    class="btn primary-btn"
-                    >Get Started</a
-                  >
-                  <a
-                    href="javascript:void(0)"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                    class="btn primary-btn-outline"
-                    >Events</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-12">
-            <div class="header-image">
-              <img src="./images/herocover.svg" alt="#" />
-            </div>
-          </div>
-        </div>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="mobile-wallpaper">
+        <style>
+          .mobile-wallpaper {
+            background-image: url("path/to/your-wallpaper.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: white;
+          }
+        </style>
+      </div>
+      <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+        <h1 class="fw-semibold">The Product League</h1>
+        <h2 class="fw-semibold">Accelarate your Product Journey</h2>
+        <p class="bgdesc">
+          Join our community of passionate product managers for <br />
+          exclusive resources, mentorship & networking events.
+        </p>
+        <p>
+          <a
+            href="https://buy.stripe.com/28o5mcdtg9cA6kgdQS"
+            class="btn-get-started"
+            >Become a Member</a
+          >
+        </p>
       </div>
     </section>
-    <!-- End header Area -->
-
-    <!--====== ABOUT FIVE PART START ======-->
-
-    <section id="about" class="about-area about-five">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-12">
-            <div class="about-five-content">
-              <p class="fs-1 fw-bold vision-title">Our Vision</p>
-              <div class="about-five-tab">
-                <div class="tab-content" id="nav-tabContent">
-                  <p class="text-white">
-                    Our vision is to create a community of passionate and
-                    motivated product management students who are equipped with
-                    the knowledge, skills, and resources necessary to succeed in
-                    their careers.
-                  </p>
-                  <p class="text-white">
-                    We aim to foster a collaborative and inclusive environment
-                    where students can learn, network, and grow as product
-                    managers through various engagement activities like case
-                    competitions, networking fairs, book-reading sessions etc.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-12">
-            <div class="about-image-five">
-              <center>
-                <img
-                  class="mt-4 rounded-circle"
-                  width="80%"
-                  src="./images/logotpl.svg"
-                  alt="about"
-                />
-              </center>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- container -->
-    </section>
-
-    <!--====== ABOUT FIVE PART ENDS ======-->
+    <!-- End Hero Section -->
 
     <!-- ===== service-area start ===== -->
-    <section id="services" class="services-area services-eight">
+    <section
+      style="background: #0d0745"
+      id="services"
+      class="services-area services-eight"
+    >
       <!--======  Start Section Title Five ======-->
       <div class="section-title-five">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="content">
-                <h2 style="color: #130d6f" class="fw-bold">
+              <div class="text-center">
+                <h1 style="color: #fff" class="fw-semibold">
                   Why become a member?
-                </h2>
+                </h1>
               </div>
             </div>
           </div>
@@ -275,6 +153,8 @@
         </div>
         <!-- container -->
       </div>
+      <br />
+      <br />
       <!--======  End Section Title Five ======-->
       <div class="row">
         <div class="col-md-12">
@@ -290,20 +170,20 @@
               />
               <div class="card-body text-center">
                 <p class="card-title mem-title">Career Networking</p>
-                <p class="card-text mem-desc px-3">
+                <p class="card-text">
                   To provide students with opportunities to connect with top
                   employers, showcase their skills and experience & land their
                   dream jobs.
                 </p>
                 <center>
-                  <button
+                  <a
                     href="#"
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
-                    class="btn primary-btn-card mb-2 mt-5"
+                    class="btn-get-started"
                   >
                     View Events
-                  </button>
+                  </a>
                 </center>
               </div>
             </div>
@@ -315,17 +195,17 @@
               />
               <div class="card-body text-center">
                 <p class="card-title mem-title">Productathons</p>
-                <p class="card-text mb-auto mem-desc px-3">
+                <p class="card-text">
                   Productathons enable the member to foster creativity and
                   problem-solving through real-world challenges and expert
-                  feedback
+                  feedback <br />
                 </p>
                 <center>
                   <button
                     href="#"
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
-                    class="btn primary-btn-card mb-2 mt-5"
+                    class="btn-get-started"
                   >
                     View Productathons
                   </button>
@@ -340,7 +220,7 @@
               />
               <div class="card-body text-center">
                 <p class="card-title mem-title">1:1 Mentoring</p>
-                <p class="card-text mb-auto mem-desc px-3">
+                <p class="card-text">
                   Personalized guidance & support for members from experienced
                   product managers to help you achieve your career goals.
                 </p>
@@ -349,7 +229,7 @@
                     href="#"
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
-                    class="btn primary-btn-card mb-2 mt-5"
+                    class="btn-get-started"
                   >
                     Book your Session
                   </button>
@@ -364,7 +244,7 @@
               />
               <div class="card-body text-center">
                 <p class="card-title mem-title">Product Book Club</p>
-                <p class="card-text mb-auto mem-desc px-3">
+                <p class="card-text">
                   Each month, our exclusive group of members will dive deep into
                   the most compelling product books out there, and engage in
                   lively discussions.
@@ -374,7 +254,7 @@
                     href="#"
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
-                    class="btn primary-btn-card mb-2 mt-5"
+                    class="btn-get-started"
                   >
                     Join our Club
                   </button>
@@ -389,23 +269,24 @@
               />
               <div class="card-body text-center">
                 <p class="card-title mem-title">Panel Discussions</p>
-                <p class="card-text mb-auto mem-desc px-3">
+                <p style="text-align: center" class="card-text">
                   Attend speaker events and trainings on topics related to
                   product management, such as product design, market research
-                  etc.
+                  etc. to enhance your knowledge.
                 </p>
                 <center>
                   <button
                     href="#"
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
-                    class="btn primary-btn-card mb-2 mt-5"
+                    class="btn-get-started"
                   >
                     View Discussions
                   </button>
                 </center>
               </div>
             </div>
+
             <div class="membership-card card">
               <img
                 src="https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
@@ -414,25 +295,27 @@
               />
               <div class="card-body text-center">
                 <p class="card-title mem-title">Newsletters</p>
-                <p class="card-text mb-2 mem-desc px-3">
-                  Join our community of subscribers and gain exclusive access to
-                  expert content that will elevate your knowledge and skills.
+                <p style="text-align: center" class="card-text">
+                  Join our community of members and subscibers and gain
+                  exclusive access to expert content that will elevate your
+                  knowledge and skills.
                 </p>
+                <center>
+                  <button
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    class="btn-get-started"
+                  >
+                    Subscribe
+                  </button>
+                </center>
               </div>
-              <center>
-                <button
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
-                  class="btn primary-btn-card mb-4"
-                >
-                  Subscribe
-                </button>
-              </center>
             </div>
           </div>
         </div>
       </div>
+      <br />
       <style>
         .card-deck {
           -webkit-overflow-scrolling: touch;
@@ -458,6 +341,351 @@
     </section>
     <!-- ===== service-area end ===== -->
 
+    <!-- ===== service-area start ===== -->
+    <section
+      style="background: #fff"
+      id="services"
+      class="services-area services-eight"
+    >
+      <!--======  Start Section Title Five ======-->
+      <div class="section-title-five">
+        <div class="container">
+          <div class="row bg-light rounded-2 p-2">
+            <div class="col-md-12">
+              <div class="text-center">
+                <h1 style="color: #0d0745; font-weight: 600" class="py-5">
+                  Upcoming Events
+                </h1>
+                <br />
+                <br />
+                <div class="p-3 text-center bg-body-tertiary rounded-3">
+                  <img
+                    class="mb-5"
+                    width="30%"
+                    src="./images/comingsoon.svg"
+                    alt=""
+                  />
+                  <h2
+                    style="color: #0d0745; letter-spacing: 0em"
+                    class="fw-semibold"
+                  >
+                    Coming Soon!
+                  </h2>
+                  <p class="fw-normal fs-5">
+                    We are cooking great events for you at The Product League -
+                    Stay Tuned!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!--======  End Section Title Five ======-->
+
+      <br />
+      <style>
+        .card-deck {
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .card {
+          flex: 0 0 auto;
+          margin-right: 10px;
+          margin-bottom: 20px;
+          border: 0;
+        }
+
+        .card-img-top {
+          height: 200px;
+          object-fit: cover;
+        }
+
+        @media (min-width: 576px) {
+          .card-deck {
+            display: flex;
+          }
+        }
+      </style>
+    </section>
+    <!-- ===== service-area end ===== -->
+
+    <!-- ======= Portfolio Section ======= -->
+
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header bg-light rounded-2 p-2">
+          <br />
+          <center>
+            <h1 style="color: #0d0745" class="fw-semibold">Resources</h1>
+            <div class="row">
+              <div class="p-3 text-center bg-body-tertiary rounded-3">
+                <img
+                  class="mb-5"
+                  width="30%"
+                  src="./images/comingsoon.svg"
+                  alt=""
+                />
+                <h2
+                  style="color: #0d0745; letter-spacing: 0em"
+                  class="fw-semibold"
+                >
+                  Coming Soon!
+                </h2>
+                <p class="fw-normal fs-5">
+                  Our research team at The Product League are working on
+                  curating a dock of resources.
+                </p>
+              </div>
+            </div>
+            <br />
+          </center>
+        </div>
+        <!-- <center>
+          <ul
+            class="nav nav-pills mb-3 justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <div
+              class="d-flex p-1"
+              style="background-color: #0d0745; border-radius: 10px"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Books
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  Podcasts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                >
+                  Articles
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-disabled-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-disabled"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-disabled"
+                  aria-selected="false"
+                >
+                  Certifications
+                </button>
+              </li>
+            </div>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <br />
+              <div class="col-md-6">
+                <div
+                  class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative"
+                >
+                  <div
+                    class="col-auto d-none d-lg-block justify-content-center"
+                  >
+                    <img
+                      src="https://placehold.jp/3d4070/ffffff/200x200.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="col px-4 d-flex flex-column position-static text-start"
+                  >
+                    <strong class="d-inline-block mb-2 text-success"></strong>
+                    <h4 class="mb-0 fw-semibold">The Product Book</h4>
+                    <div class="mb-1 text-muted">Author XYZ</div>
+                    <p class="mb-auto">
+                      We think this book is a must have because yada yada yada
+                      basic description of the book and why we recommend it
+                    </p>
+                    <a
+                      style="color: #0d0745 !important"
+                      class="link-primary"
+                      href="#"
+                      >Buy on Amazon <i class="bi-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="col-md-6">
+                <div
+                  class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative"
+                >
+                  <div
+                    class="col-auto d-none d-lg-block justify-content-center"
+                  >
+                    <img
+                      src="https://placehold.jp/3d4070/ffffff/200x200.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="col px-4 d-flex flex-column position-static text-start"
+                  >
+                    <strong class="d-inline-block mb-2 text-success"></strong>
+                    <h4 class="mb-0 fw-semibold">The Product Book</h4>
+                    <div class="mb-1 text-muted">Author XYZ</div>
+                    <p class="mb-auto">
+                      We think this book is a must have because yada yada yada
+                      basic description of the book and why we recommend it
+                    </p>
+                    <a
+                      style="color: #0d0745 !important"
+                      class="link-primary"
+                      href="#"
+                      >Buy on Amazon <i class="bi-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn-get-started">View More</button>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <br />
+              <div class="col-md-6">
+                <div
+                  class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative"
+                >
+                  <div
+                    class="col-auto d-none d-lg-block justify-content-center"
+                  >
+                    <img
+                      src="https://placehold.jp/3d4070/ffffff/200x200.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="col px-4 d-flex flex-column position-static text-start"
+                  >
+                    <strong class="d-inline-block mb-2 text-success"></strong>
+                    <h4 class="mb-0 fw-semibold">
+                      Mitigate Risk With This Simple Product Innovation Strategy
+                    </h4>
+                    <div class="mb-1 text-muted">By XYZ | 8 MIN READ</div>
+                    <p class="mb-auto">
+                      We think this book is a must have because yada yada yada
+                      basic description of the book and why we recommend it
+                    </p>
+                    <a
+                      style="color: #0d0745 !important"
+                      class="link-secondary"
+                      href="#"
+                      >Read More<i class="bi-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="col-md-6">
+                <div
+                  class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative"
+                >
+                  <div
+                    class="col-auto d-none d-lg-block justify-content-center"
+                  >
+                    <img
+                      src="https://placehold.jp/3d4070/ffffff/200x200.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="col px-4 d-flex flex-column position-static text-start"
+                  >
+                    <strong class="d-inline-block mb-2 text-success"></strong>
+                    <h4 class="mb-0 fw-semibold">
+                      Mitigate Risk With This Simple Product Innovation Strategy
+                    </h4>
+                    <div class="mb-1 text-muted">By XYZ | 8 MIN READ</div>
+                    <p class="mb-auto">
+                      We think this book is a must have because yada yada yada
+                      basic description of the book and why we recommend it
+                    </p>
+                    <a
+                      style="color: #0d0745 !important"
+                      class="link-secondary"
+                      href="#"
+                      >Read More<i class="bi-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-get-started">View All Articles</button>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-disabled"
+              role="tabpanel"
+              aria-labelledby="pills-disabled-tab"
+              tabindex="0"
+            >
+              Certifications
+            </div>
+          </div>
+        </center> -->
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
     <!-- Start Pricing  Area -->
     <section id="pricing" class="pricing-area pricing-fourteen">
       <div class="container">
@@ -466,18 +694,18 @@
             <a target="_blank" href="https://buy.stripe.com/28o5mcdtg9cA6kgdQS"
               ><button
                 href="https://buy.stripe.com/28o5mcdtg9cA6kgdQS"
-                class="btn primary-btn-card mb-5 mt-0"
+                class="btn-get-started mb-5 mt-0"
               >
                 Sign Up Now!
               </button></a
             >
-            <p class="fs-5 fw-normal lh-base mt-2">
+            <p class="fs-6 fw-normal lh-base mt-2 px-2">
               Access a lively network of product experts by becoming a member of
               The Product League right now for just
               <strong>$5 each semester</strong>.
             </p>
             <div class="ud-pricing-body mt-3">
-              <ul class="text-black">
+              <ul class="text-black list-unstyled">
                 <li class="p-2">
                   <div class="ud-pricing-footer">
                     <button
@@ -564,290 +792,302 @@
         </button>
       </center>
     </section>
-    <!--/ End Pricing  Area -->
-    <!-- ===== service-area start ===== -->
-    <!-- ====== Team Start ====== -->
-
-    <!-- ===== service-area end ===== -->
-    <!-- ========================= contact-section start ========================= -->
-    <!-- ====== Contact Start ====== -->
-    <section
-      id="contact"
-      style="
-        background-color: linear-gradient(
-          95.92deg,
-          #0d0745 39.85%,
-          #20198a 72.08%
-        );
-      "
-      class="about-area about-five"
-    >
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-12">
-            <div class="about-five-content">
-              <p class="fs-1 fw-bold vision-title">Contact Us</p>
-
-              <div class="about-five-tab">
-                <div class="text-white fs-5">
-                  Ask us anything or just say Hi!
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <center>
+            <h1 style="color: #0d0745" class="fw-semibold">Our Team</h1>
+          </center>
+          <p class="section-description"></p>
+        </div>
+        <div class="row">
+          <center>
+            <div class="col-lg-3 col-md-6">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="pic">
+                  <img src="./assets/img/team/vasant.jpeg" alt="" />
                 </div>
-                <div class="tab-content" id="nav-tabContent">
-                  <i
-                    style="font-size: 1.2em; color: #fff"
-                    class="bi bi-envelope-fill"
-                  ></i>
-                  <a href="mailto: team@theproductleague.com">
-                    <p class="text-white">
-                      &nbsp; team@theproductleague.com
-                    </p></a
-                  >
+                <br />
+                <h4>Vasant Gondhalekar</h4>
+                <span>Faculty Advisor</span>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/vasantgondhalekar/"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
                 </div>
               </div>
             </div>
+          </center>
+          <br />
+        </div>
+        <div class="row">
+          <div class="col-lg-1 col-md-4 col-sm-6"></div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic">
+                <img src="./assets/img/team/karan.jpeg" alt="" />
+              </div>
+              <h4>Karan Pratap Singh</h4>
+              <span class="fw-normal">President</span>
+
+              <div class="social">
+                <a href="https://www.linkedin.com/in/kps25/"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-6 col-12">
-            <div class="about-image-five">
-              <center>
-                <iframe
-                  class="airtable-embed"
-                  src="https://airtable.com/embed/shrY8azJTdFpM3Eff?backgroundColor=purple"
-                  frameborder="0"
-                  onmousewheel=""
-                  width="100%"
-                  height="533"
-                  style="font-family: 'Inter', sans-serif"
-                ></iframe>
-              </center>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic">
+                <img src="./assets/img/team/karankaul.jpeg" alt="" />
+              </div>
+              <h4>Karan Kaul</h4>
+              <span>VP of Strategy</span>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/karankaul03/"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic">
+                <img src="./assets/img/team/visar.jpeg" alt="" />
+              </div>
+              <h4>Visar Hadri</h4>
+              <span>VP of Growth</span>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/vhadri/"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="pic">
+                <img src="./assets/img/team/sanatan.jpeg" alt="" />
+              </div>
+              <h4>Sanatan Shrivastava</h4>
+              <span>VP of Technology</span>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/sanatanshrivastava/"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="pic">
+                <img src="./assets/img/team/manish.jpeg" alt="" />
+              </div>
+              <h4>Manish Ramchandani</h4>
+              <span>VP of Treasury</span>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/manishrramchandani/"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-4 col-sm-6"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+    <section id="contact" style="background: #0d0745">
+      <div class="container">
+        <div class="container px-4 py-5">
+          <div
+            class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"
+          >
+            <div class="col d-flex flex-column align-items-start gap-2">
+              <h1 class="text-white fw-semibold">Contact Us</h1>
+              <p class="text-white fs-5">Ask us anything. Just say Hello!</p>
+              <!-- <a href="#" class="btn btn-primary btn-lg">Primary button</a> -->
+              <span class="d-flex"
+                ><i
+                  style="color: #fff; font-size: larger"
+                  class="bi bi-envelope-fill"
+                ></i>
+                <p class="text-white fs-5 px-2">
+                  team@theproductleague.com
+                </p></span
+              >
+            </div>
+
+            <div class="col">
+              <div class="row">
+                <center>
+                  <iframe
+                    class="airtable-embed"
+                    src="https://airtable.com/embed/shrY8azJTdFpM3Eff?backgroundColor=purple"
+                    frameborder="0"
+                    onmousewheel=""
+                    width="100%"
+                    height="600"
+                    style="font-family: 'Inter', sans-serif"
+                  ></iframe>
+                </center>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- container -->
     </section>
 
-    <!-- Start Footer Area -->
-    <footer class="footer-area footer-eleven">
-      <!-- Start Footer Top -->
-      <div class="footer-top">
-        <div class="container">
-          <div class="inner-content">
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-2 my-5">
+        <div class="col">
+          <h5 class="fw-semibold" style="color: #0d0745">The Product League</h5>
+          <!-- Single Widget -->
+          <div class="">
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  width="70%"
+                  src="./images/logo.svg"
+                  alt="#"
+                  class="img-fluid rounded-circle bg-white"
+                />
+              </a>
+            </div>
+            <br />
+            <h6 style="color: #0d0745">Prepare. Network. Innovate.</h6>
+          </div>
+        </div>
+
+        <div class="col mb-3"></div>
+
+        <div class="col mb-3">
+          <h5 class="fw-semibold" style="color: #0d0745">Relevant Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Events</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Resources</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Membership</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h5 class="fw-semibold" style="color: #0d0745">Support</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Refund Policy</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <div class="container text-center">
             <div class="row">
-              <div class="col-lg-4 col-md-6 col-12">
-                <h5 style="color: #130d6f">The Product League.</h5>
-                <!-- Single Widget -->
-                <div class="footer-widget f-about">
-                  <div class="logo">
-                    <br />
-                    <a href="index.html">
-                      <img
-                        width="50%"
-                        src="./images/logotplbg.png"
-                        alt="#"
-                        class="img-fluid rounded-circle bg-white"
-                      />
-                    </a>
-                  </div>
-                  <br />
-                  <h6 style="color: #130d6f">Prepare. Network. Innovate.</h6>
+              <div class="col-6 col-sm-3">
+                <center>
+                  <a
+                    target="_blank"
+                    href="https://instagram.com/theproductleague"
+                  >
+                    <i
+                      style="font-size: 3em; color: #0d0745"
+                      class="bi bi-instagram"
+                    ></i
+                  ></a>
+                </center>
+              </div>
+              <div class="col-6 col-sm-3">
+                <center>
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    href="javascript:void(0)"
+                    ><i
+                      style="font-size: 3em; color: #0d0745"
+                      class="bi bi-discord"
+                    ></i
+                  ></a>
+                </center>
+              </div>
 
-                  <p style="color: #f8dd5c" class="copyright-text">
-                    <span style="color: #f8dd5c">© 2024 Ayro UI.</span>Designed
-                    and Developed by
-                    <a
-                      style="color: #f8dd5c"
-                      href="javascript:void(0)"
-                      rel="nofollow"
-                    >
-                      Ayro UI
-                    </a>
-                  </p>
-                </div>
-                <!-- End Single Widget -->
-              </div>
-              <div class="col-lg-2 col-md-6 col-12">
-                <!-- Single Widget -->
-                <div class="footer-widget f-link">
-                  <h5>Relevant Links</h5>
-                  <ul>
-                    <li><a href="#hero-area">Home</a></li>
-                    <li>
-                      <a
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                        href="#"
-                        >Events</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                        href="#"
-                        >Resources</a
-                      >
-                    </li>
-                    <li><a href="#services">Membership</a></li>
-                  </ul>
-                </div>
-                <!-- End Single Widget -->
-              </div>
-              <div class="col-lg-2 col-md-6 col-12">
-                <!-- Single Widget -->
-                <div class="footer-widget f-link">
-                  <h5>Support</h5>
-                  <ul>
-                    <li>
-                      <a
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                        href="#)"
-                        >FAQs</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                        href="javascript:void(0)"
-                        >Pricing</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                        href="javascript:void(0)"
-                        >Refund Policy</a
-                      >
-                    </li>
-                    <li><a href="#contact">Contact Us</a></li>
-                  </ul>
-                </div>
-                <!-- End Single Widget -->
-              </div>
-              <div class="col-lg-4 col-md-6 col-12">
-                <!-- Single Widget -->
-                <div class="footer-widget newsletter">
-                  <div class="row">
-                    <div class="col-6">
-                      <center>
-                        <a
-                          target="_blank"
-                          href="https://instagram.com/theproductleague"
-                        >
-                          <i
-                            style="font-size: 3em; color: #130d6f"
-                            class="bi bi-instagram"
-                          ></i
-                        ></a>
-                      </center>
-                    </div>
-                    <br />
-                    <div class="col-6">
-                      <a
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                        href="javascript:void(0)"
-                        ><i
-                          style="font-size: 3em; color: #130d6f"
-                          class="bi bi-discord"
-                        ></i
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="row mt-4">
-                    <div class="col-6">
-                      <center>
-                        <a
-                          target="_blank"
-                          href="https://www.linkedin.com/company/theproductleague/"
-                          ><i
-                            style="font-size: 3em; color: #130d6f"
-                            class="bi bi-linkedin"
-                          ></i
-                        ></a>
-                      </center>
-                    </div>
-                    <br />
-                    <div class="col-6">
-                      <a
-                        target="_blank"
-                        href="mailto: team@theproductleague.com"
-                        ><i
-                          style="font-size: 3em; color: #130d6f"
-                          class="bi bi-envelope-fill"
-                        ></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
+              <!-- Force next columns to break to new line -->
+              <div class="w-100"></div>
 
-                <!-- End Single Widget -->
+              <div class="col-6 col-sm-3">
+                <center>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/company/theproductleague/"
+                    ><i
+                      style="font-size: 3em; color: #0d0745"
+                      class="bi bi-linkedin"
+                    ></i
+                  ></a>
+                </center>
+              </div>
+              <div class="col-6 col-sm-3">
+                <center>
+                  <a target="_blank" href="mailto: team@theproductleague.com"
+                    ><i
+                      style="font-size: 3em; color: #0d0745"
+                      class="bi bi-envelope-fill"
+                    ></i
+                  ></a>
+                </center>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <!--/ End Footer Top -->
-    </footer>
-    <!--/ End Footer Area -->
+      </footer>
+    </div>
     <div
-      style="background-color: #130d6f"
+      style="background-color: #0d0745"
       class="d-flex flex-column flex-sm-row justify-content-between p-4"
     >
-      <p style="color: #f8dd5c">&copy; 2023, The Product League @ UT Dallas.</p>
+      <p style="color: #fff">&copy; 2023, The Product League @ UT Dallas.</p>
+      <br />
+      <p class="copyright-text text-white-50">
+        <span>© 2024 Ayro UI. </span>Designed and Developed by
+        <a class="text-white-50" href="javascript:void(0)" rel="nofollow">
+          Ayro UI
+        </a>
+      </p>
     </div>
-    <a href="#" class="scroll-top btn-hover">
-      <i class="lni lni-chevron-up"></i>
-    </a>
 
-    <!--====== js ======-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/tiny-slider.js"></script>
-
-    <script>
-      //===== close navbar-collapse when a  clicked
-      let navbarTogglerNine = document.querySelector(
-        ".navbar-nine .navbar-toggler"
-      );
-      navbarTogglerNine.addEventListener("click", function () {
-        navbarTogglerNine.classList.toggle("active");
-      });
-
-      // ==== left sidebar toggle
-      let sidebarLeft = document.querySelector(".sidebar-left");
-      let overlayLeft = document.querySelector(".overlay-left");
-      let sidebarClose = document.querySelector(".sidebar-close .close");
-
-      overlayLeft.addEventListener("click", function () {
-        sidebarLeft.classList.toggle("open");
-        overlayLeft.classList.toggle("open");
-      });
-      sidebarClose.addEventListener("click", function () {
-        sidebarLeft.classList.remove("open");
-        overlayLeft.classList.remove("open");
-      });
-
-      // ===== navbar nine sideMenu
-      let sideMenuLeftNine = document.querySelector(".navbar-nine .menu-bar");
-
-      sideMenuLeftNine.addEventListener("click", function () {
-        sidebarLeft.classList.add("open");
-        overlayLeft.classList.add("open");
-      });
-
-      //========= glightbox
-      GLightbox({
-        href: "https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM",
-        type: "video",
-        source: "youtube", //vimeo, youtube or local
-        width: 900,
-        autoplayVideos: true,
-      });
-    </script>
   </body>
 </html>

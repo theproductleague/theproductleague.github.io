@@ -58,13 +58,13 @@
   background: #fff;
   border: 0.5px solid #e3e3e3;
   border-radius: 20px;
-  width: 22rem;
+  width: 24rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {
   .membership-card {
-    width: 19rem;
+    width: 22rem;
   }
 }
 
@@ -94,20 +94,6 @@
   /* or 21px */
   text-align: center;
   color: #131041;
-}
-
-.nav-link {
-  color: #fff;
-}
-
-.nav-link:hover {
-  color: #fff;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  background: #0d0745;
-  border: solid 1px #fff;
 }
 
 .tiles {
@@ -142,5 +128,52 @@
     border-radius: 15px;
     border: 1.5px solid #5e72eb;
     font-weight: bold;
+  }
+}
+
+.nav-link {
+  z-index: 5;
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.3s;
+  display: flex;
+}
+
+.w-nav-link {
+  vertical-align: top;
+  color: #222;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.card-deck {
+  -webkit-overflow-scrolling: touch;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (min-width: 576px) {
+  .card-deck {
+    display: flex;
   }
 }

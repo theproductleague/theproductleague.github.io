@@ -43,6 +43,7 @@
   </head>
   <body>
     <!-- ======= Header ======= -->
+    <!-- ======= Header ======= -->
     <header
       id="header"
       class="fixed-top d-flex align-items-center header-transparent"
@@ -75,7 +76,7 @@
               >
             </li>
             <li class="dropdown">
-              <a class="nav-link scrollto w-nav-link" href="#resources"
+              <a class="nav-link scrollto w-nav-link" href="#portfolio"
                 ><span>Resources</span>
               </a>
             </li>
@@ -94,20 +95,23 @@
       </div>
     </header>
     <!-- End Header -->
-    <br />
+
     <!-- ======= Hero Section ======= -->
     <section id="hero">
-      <div class="hero-container">
-        <h1>
+      <div
+        class="hero-container mt-md-4"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <h1 class="">
           Accelarate your <br />
           Product Journey
         </h1>
-        <div class="bgdesc lh-sm">
+        <div class="fs-5 fw-normal lh-base mt-2 bgdesc">
           Join our community of passionate product managers for <br />
           exclusive resources, mentorship & networking events.
         </div>
         <br />
-
         <a
           href="https://buy.stripe.com/28o5mcdtg9cA6kgdQS"
           class="btn-get-started"
@@ -121,17 +125,17 @@
     <!-- Deliverables: Why become a member? -->
     <!-- ===== service-area start ===== -->
     <section
-      style="background: #0d0745"
       id="services"
-      class="services-area services-eight"
+      class="my-4 mx-4 vh-80"
+      style="background: #1a1a1a; border-radius: 15px"
     >
       <!--======  Start Section Title Five ======-->
-      <div class="section-title-five">
+      <div class="">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="text-center">
-                <h1 class="display-7 fw-bold" style="color: #fff">
+                <h1 class="display-7 fw-bold" style="color: #ffffff">
                   Exclusive benefits tailored just for you.
                 </h1>
               </div>
@@ -307,9 +311,12 @@
     <!-- ===== "Why being a member" area end ===== -->
 
     <!-- ===== service-area start ===== -->
-    <section id="resources">
-      <div class="px-4 pt-2 my-5 text-center">
-        <h1 class="display-4 fw-bold">Resources</h1>
+    <section class="px-lg-5 px-4" id="resources">
+      <div
+        style="border-radius: 15px"
+        class="px-4 pt-2 my-2 text-center bg-light"
+      >
+        <h1 class="display-5 fw-bold mt-4">Resources</h1>
         <div class="col-lg-6 mx-auto">
           <h5 class="text-muted mt-3 mb-3">What are we upto</h5>
           <p class="bgdesc mb-4 text-lg-center">
@@ -330,18 +337,28 @@
               loading="lazy"
             />
           </div>
-
-          <h4 class="text-secondary fw-semibold mt-3 mb-3">Coming Soon!</h4>
         </div>
       </div>
     </section>
-    <br />
-    <section>
-      <div class="container px-4 py-5">
+    <section style="background-color: #ffffff" class="py-4">
+      <div
+        style="
+          background-image: url('./images/sectionstart.png');
+          background-size: cover;
+          border-radius: 10px;
+        "
+        class="container px-4 py-5"
+      >
         <div class="row flex-lg-row-reverse align-items-center g-2">
           <h1 class="fw-bold text-center mb-1">Join Us. Start Now.</h1>
-          <div class="col-lg-6 justify-content-end">
-            <center>
+          <div class="col-lg-6 justify-content-end"></div>
+          <div class="col-lg-6">
+            <div class="mt-3">
+              <p class="fs-5 fw-normal lh-base mt-2 px-2 justify-content-start">
+                Access a lively network of product experts by becoming a member
+                of The Product League right now for just
+                <strong>$5 each semester</strong>.
+              </p>
               <img
                 width="70%"
                 style="border-radius: 20px"
@@ -358,60 +375,13 @@
                   alt="Clickable area"
                 />
               </map>
-            </center>
-          </div>
-          <div class="col-lg-6">
-            <div class="mt-3">
-              <p class="fs-6 fw-normal lh-base mt-2 px-2">
-                Access a lively network of product experts by becoming a member
-                of The Product League right now for just
-                <strong>$5 each semester</strong>.
-              </p>
-              <ul class="text-black list-unstyled">
-                <li class="">
-                  <div
-                    style="background-color: #5e72eb; color: #fff"
-                    class="alert alert-primary text-center fw-semibold"
-                    role="alert"
-                  >
-                    Networking & 1:1 Mentoring Sessions
-                  </div>
-                </li>
-                <li class="">
-                  <div
-                    style="background-color: #5e72eb; color: #fff"
-                    class="alert alert-primary text-center fw-semibold"
-                    role="alert"
-                  >
-                    Productathons, Case competitions
-                  </div>
-                </li>
-                <li class="">
-                  <div
-                    style="background-color: #5e72eb; color: #fff"
-                    class="alert alert-primary text-center fw-semibold"
-                    role="alert"
-                  >
-                    Speaker Series, Panel Discussions
-                  </div>
-                </li>
-                <li class="">
-                  <div
-                    style="background-color: #5e72eb; color: #fff"
-                    class="alert alert-primary text-center fw-semibold"
-                    role="alert"
-                  >
-                    Product Resources, Newsletters & More!
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ======= Team Section ======= -->
-    <section id="team">
+    <section style="background-color: #ffffff" id="team">
       <div class="container" data-aos="fade-up">
         <h1 class="display-7 fw-bold text-center mb-4">Our team</h1>
 
@@ -468,43 +438,44 @@
             </div>
           </div>
         </div>
-        <div class="row mt-lg-2">
-          <div class="col-lg-3 col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="pic">
-                <img src="./assets/img/team/sanatan.jpeg" alt="" />
+        <center>
+          <div class="justify-content-center row mt-lg-2">
+            <div class="col-lg-3 col-md-6">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="pic">
+                  <img src="./assets/img/team/sanatan.jpeg" alt="" />
+                </div>
+                <h4>Sanatan Shrivastava</h4>
+                <span>VP of Technology</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
               </div>
-              <h4>Sanatan Shrivastava</h4>
-              <span>VP of Technology</span>
-              <div class="social">
-                <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="pic">
+                  <img
+                    class="team-img"
+                    src="./assets/img/team/manish.jpeg"
+                    alt=""
+                  />
+                </div>
+                <h4>Manish Ramchandani</h4>
+                <span>VP of Treasury</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="pic">
-                <img
-                  class="team-img"
-                  src="./assets/img/team/manish.jpeg"
-                  alt=""
-                />
-              </div>
-              <h4>Manish Ramchandani</h4>
-              <span>VP of Treasury</span>
-              <div class="social">
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
+        </center>
       </div>
     </section>
 
     <!-- Contact Section -->
 
-    <section id="contact" style="background: #0d0745">
+    <section id="contact" style="background: #1a1a1a">
       <div class="container">
         <div class="container px-4 py-5">
           <div
@@ -554,120 +525,41 @@
 
     <section id="footer">
       <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-2 my-5">
-          <center>
-            <div class="col mt-3">
-              <h5 class="fw-bold" style="color: #0d0745">The Product League</h5>
-              <!-- Single Widget -->
-              <div>
-                <div class="logo">
-                  <a href="index.html">
-                    <img
-                      width="70%"
-                      src="./images/logo.svg"
-                      alt="#"
-                      class="img-fluid rounded-circle bg-white"
-                    />
-                  </a>
-                </div>
-                <br />
-                <h6 class="fw-semibold" style="color: #0d0745">
-                  Prepare. Network. Innovate.
-                </h6>
-              </div>
-            </div>
-          </center>
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <span style="color: #1a1a1a" class="mb-3 mb-md-0 fs-6 fw-semibold"
+              >&copy; 2023 The Product League</span
+            >
 
-          <div class="col mb-3"></div>
+            <span style="color: #1a1a1a" class="mb-3 mb-md-0 fs-6 fw-light"
+              >&nbsp;&nbsp;&nbsp;Refund Policy</span
+            >
+          </div>
 
-          <center>
-            <div class="col mt-3 mb-3 text-lg-start">
-              <h5 class="fw-semibold" style="color: #0d0745">Home</h5>
-              <h5 class="fw-semibold" style="color: #0d0745">FAQs</h5>
-              <h5 class="fw-semibold" style="color: #0d0745">About Us</h5>
-              <h5 class="fw-semibold" style="color: #0d0745">Resources</h5>
-              <h5 class="fw-semibold" style="color: #0d0745">Membership</h5>
-            </div>
-          </center>
-
-          <center>
-            <div class="col mt-3 text-lg-start">
-              <h5 class="fw-semibold" style="color: #0d0745">Support</h5>
-              <h5 class="fw-semibold" style="color: #0d0745">Pricing</h5>
-              <h5 class="fw-semibold" style="color: #0d0745">Refund Policy</h5>
-              <h5 class="fw-semibold" style="color: #0d0745">Contact Us</h5>
-            </div>
-          </center>
-
-          <center>
-            <div class="col mt-3 mb-3 text-start">
-              <h6 class="fw-semibold" style="color: #0d0745">
-                <center>
-                  <a
-                    target="_blank"
-                    href="https://instagram.com/theproductleague"
-                  >
-                    <i
-                      style="font-size: 3em; color: #0d0745"
-                      class="bi bi-instagram"
-                    ></i
-                  ></a>
-                </center>
-              </h6>
-              <h6 class="fw-semibold" style="color: #0d0745">
-                <center>
-                  <a
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                    href="javascript:void(0)"
-                    ><i
-                      style="font-size: 3em; color: #0d0745"
-                      class="bi bi-discord"
-                    ></i
-                  ></a>
-                </center>
-              </h6>
-              <h6 class="fw-semibold" style="color: #0d0745">
-                <center>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/company/theproductleague/"
-                    ><i
-                      style="font-size: 3em; color: #0d0745"
-                      class="bi bi-linkedin"
-                    ></i
-                  ></a>
-                </center>
-              </h6>
-              <h6 class="fw-semibold" style="color: #0d0745">
-                <center>
-                  <a target="_blank" href="mailto: team@theproductleague.com"
-                    ><i
-                      style="font-size: 3em; color: #0d0745"
-                      class="bi bi-envelope-fill"
-                    ></i
-                  ></a>
-                </center>
-              </h6>
-            </div>
-          </center>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3 fs-3">
+              <a
+                style="color: #1a1a1a"
+                href="https://www.linkedin.com/company/theproductleague/"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+            <li class="ms-3 fs-3">
+              <a style="color: #1a1a1a" href="mailto: team@theproductleague.com"
+                ><i class="bi bi-envelope"></i
+              ></a>
+            </li>
+            <li class="ms-3 fs-3">
+              <a
+                style="color: #1a1a1a"
+                href="https://instagram.com/theproductleague"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+          </ul>
         </footer>
-      </div>
-      <div
-        style="background-color: #0d0745"
-        class="d-flex flex-column flex-sm-row justify-content-between p-4"
-      >
-        <center>
-          <p style="color: #fff">
-            &copy; 2023, The Product League @ UT Dallas.
-          </p>
-        </center>
-        <!-- <p class="copyright-text text-white-50">
-        <span>© 2024 Ayro UI. </span>Designed and Developed by
-        <a class="text-white-50" href="javascript:void(0)" rel="nofollow">
-          Ayro UI
-        </a>
-      </p> -->
       </div>
     </section>
 

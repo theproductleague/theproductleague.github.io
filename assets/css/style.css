@@ -128,7 +128,7 @@ h6 {
   height: 90vh;
   background: url(../../images/bgcover.png) top center;
   background-size: cover;
-  position: relative;
+  /* position: relative; */
 }
 
 @media only screen and (max-width: 767px) {
@@ -426,7 +426,7 @@ section {
 
 /* Services Section
 --------------------------------*/
-#resources {
+#services {
   background: #fff;
   background-size: cover;
   padding: 80px 0 60px 0;

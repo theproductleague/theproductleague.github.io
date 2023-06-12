@@ -79,7 +79,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 23px;
   line-height: 110%;
   /* or 29px */
   color: #0d0745;
@@ -89,7 +89,7 @@
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 130%;
   /* or 21px */
   text-align: center;
@@ -139,8 +139,8 @@
   justify-content: center;
   align-items: center;
   padding: 12px 20px;
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   transition: color 0.3s;
   display: flex;
 }
@@ -168,7 +168,7 @@
 }
 
 .card-img-top {
-  height: 200px;
+  height: 250px;
   object-fit: cover;
 }
 

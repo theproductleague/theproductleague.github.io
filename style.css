@@ -3,6 +3,9 @@
 body {
   font-family: "SF Pro Display", sans-serif !important;
   color: #000000;
+  line-height: 1.381002381;
+  font-weight: 400;
+  letter-spacing: 0.011em !important;
 }
 
 #hero {

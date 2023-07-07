@@ -1,11 +1,14 @@
-@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@font-face {
+  font-family: "SF Pro";
+  src: url("./fonts/sfpro.ttf") format("truetype");
+  /* Add additional font variations if needed */
+  /* font-weight: bold; */
+  /* font-style: italic; */
+}
 
 body {
-  font-family: "SF Pro Display", sans-serif !important;
-  color: #000000;
-  line-height: 1.381002381;
-  font-weight: 400;
-  letter-spacing: 0.011em !important;
+  font-family: "SF Pro", sans-serif !important;
+  color: black !important;
 }
 
 #hero {
@@ -120,12 +123,6 @@ body {
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
-.featurette-heading {
-  letter-spacing: -0.05rem;
 }
 
 /* rtl:end:remove */

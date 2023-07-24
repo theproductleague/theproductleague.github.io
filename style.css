@@ -223,3 +223,7 @@ body {
 .animated-element[data-aos="fade-left"].aos-animate {
   animation: slide-in-out 2s linear infinite; /* Adjust the duration as needed */
 }
+
+.nav-link {
+  font-size: medium !important;
+}

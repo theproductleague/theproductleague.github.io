@@ -118,7 +118,7 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 0.5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 0.5rem 0 !important; /* Space out the Bootstrap <hr> more */
   border: 0;
 }
 

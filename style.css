@@ -1,13 +1,12 @@
 @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
-@import url(https://db.onlinewebfonts.com/c/eb270b13b84d5a43462737e3fb0a268d?family=Suisse+Intl+Regular);
-
+@import url("https://fonts.cdnfonts.com/css/google-sans");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
-  font-family: "SF Pro Display" !important;
+  font-family: "Inter" !important;
 }
 
 #hero {
   padding: 160px 0 60px 0;
-  background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -221,8 +220,13 @@ body {
 
 .nav-link {
   font-size: 15px !important;
-  letter-spacing: 0.7px;
+  letter-spacing: -0px;
 }
 
-btn {
+#btn {
+  font-size: smaller;
+  font-weight: 500 !important;
+  padding: 12px 20px;
+  border-radius: 40px;
+  letter-spacing: -0.5px;
 }

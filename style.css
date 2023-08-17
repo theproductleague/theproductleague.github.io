@@ -14,6 +14,24 @@ html {
   background-position: center;
 }
 
+#hero-events {
+  padding: 160px 0 60px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 767px) {
+    #hero-events {
+      padding: 100px 0 60px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      font-size: 15px;
+    }
+}
+
 .membership-card {
   background: #fff;
   border: 0.5px solid #e3e3e3;

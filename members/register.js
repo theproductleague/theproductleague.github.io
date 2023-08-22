@@ -20,23 +20,31 @@ let emailToUpdate = null; // Store the email to update
 
 checkEmailBtn.addEventListener('click', async () => {
     const email = document.getElementById('email').value;
-
     // Check if the email exists in the Firebase Realtime Database
     const emailExists = await checkEmailExistsInDatabase(email);
 
     if (emailExists) {
         emailToUpdate = email;
         passwordSection.style.display = 'block';
+        document.getElementById('checkEmailBtn').style.display = 'none';
         
     } else {
-        alert('Email does not exist in the database.');
+        document.getElementById('emailNotExistAlert').style.display = 'block';
+        return;
     }
 });
 
 passwordForm.addEventListener('submit', async (event) => {
     event.preventDefault();
-    const passwordField = document.getElementById('password')
     const passwordValue = document.getElementById('password').value;
+
+    // Password regex pattern: Requires at least 8 characters, at least one uppercase letter, at least one lowercase letter, and at least one digit.
+    const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+
+    if (!passwordPattern.test(passwordValue)) {
+        document.getElementById('passwordCheckValidationAlert').style.display = 'block';
+        return;
+    }
 
     if (!emailToUpdate) {
         alert('Please check the email first.');
@@ -50,14 +58,18 @@ passwordForm.addEventListener('submit', async (event) => {
         .then((userCredential) => {
             // Signed in 
             var user = userCredential.user;
-            // ...
+            alert('You are now registered.');
+            document.getElementById('userCreatedSuccess').setAttribute('data-bs-toggle', 'modal');
+            document.getElementById('userCreatedSuccess').setAttribute('data-bs-target', '#userCreatedSuccess');
+            redirect();
         })
         .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
-            // ..
+            console.log(errorCode + " : " + errorMessage);
+            document.getElementById('userAlreadyExistsAlert').style.display = "block";
+            return;
         });
-        alert('User created successfully.');
     } catch (error) {
         console.error('Error updating password:', error.message);
     }
@@ -82,7 +94,7 @@ async function updatePasswordInDatabase(email, password) {
         if (userKey) {
             await usersRef.child(userKey).update({ password: password });
             console.log('Password updated successfully.');
-            window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/index.html";
+            
         } else {
             throw new Error('User key not found in the database.');
         }
@@ -91,3 +103,8 @@ async function updatePasswordInDatabase(email, password) {
     }
 }
 
+async function redirect() {
+    setTimeout(function() {
+        window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/index.html";
+    }, 2000); // Delay in milliseconds (2000ms = 2 seconds)      
+}

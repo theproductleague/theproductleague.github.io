@@ -48,5 +48,11 @@ function login(){
 }
 
 function logout(){
-  firebase.auth().signOut();
+  firebase.auth().signOut().then(() => {
+    setTimeout(function() {
+      window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/login.html";
+  }, 2000); // Delay in milliseconds (2000ms = 2 seconds)   
+  }).catch((error) => {
+    //...
+  });
 }

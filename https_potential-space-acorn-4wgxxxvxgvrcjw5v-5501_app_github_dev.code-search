@@ -1,0 +1,37 @@
+# Query: https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev
+# ContextLines: 1
+
+7 results - 5 files
+
+sync.html:
+   99                <div class="container px-5">
+  100:                 <img src="https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/images/joinuscrop.gif" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+  101                </div>
+
+members/index.js:
+  56      setTimeout(function() {
+  57:       window.location.href = "https://theproductleague.com/members/login.html";
+  58    }, 2000); 
+
+members/login.js:
+  22          setTimeout(function() {
+  23:             window.location.href = "https://theproductleague.com/members/index.html";
+  24          }, 2000);
+
+  35      setTimeout(function() {
+  36:     window.location.href = "https://theproductleague.com/members/login.html";
+  37  }, 2000); // Delay in milliseconds (2000ms = 2 seconds)   
+
+members/profile.js:
+  39      setTimeout(function() {
+  40:         window.location.href = "https://theproductleague.com/sync.html";
+  41      }, 2000);
+
+  49          setTimeout(function() {
+  50:         window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/index.html";
+  51      }, 2000); // Delay in milliseconds (2000ms = 2 seconds)   
+
+members/register.js:
+  123      setTimeout(function() {
+  124:         window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/index.html";
+  125      }, 2000);

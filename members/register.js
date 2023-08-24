@@ -27,51 +27,68 @@ checkEmailBtn.addEventListener('click', async () => {
         emailToUpdate = email;
         passwordSection.style.display = 'block';
         document.getElementById('checkEmailBtn').style.display = 'none';
-        
     } else {
         document.getElementById('emailNotExistAlert').style.display = 'block';
-        return;
     }
 });
 
 passwordForm.addEventListener('submit', async (event) => {
     event.preventDefault();
+    console.log('I am working')
     const passwordValue = document.getElementById('password').value;
-
+    const checkPasswordValue = document.getElementById('checkPassword').value;
+    
     // Password regex pattern: Requires at least 8 characters, at least one uppercase letter, at least one lowercase letter, and at least one digit.
     const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 
     if (!passwordPattern.test(passwordValue)) {
         document.getElementById('passwordCheckValidationAlert').style.display = 'block';
-        return;
+    }
+
+    if (passwordValue != checkPasswordValue) {
+        document.getElementById('passwordsNotMatchAlert').style.display = 'block';
     }
 
     if (!emailToUpdate) {
-        alert('Please check the email first.');
-        return;
+        console.log('Please check the email first.');
     }
 
     console.log(emailToUpdate)
     // Update the password in the Firebase Realtime Database
     try {
-        firebase.auth().createUserWithEmailAndPassword(emailToUpdate, passwordValue)
-        .then((userCredential) => {
-            // Signed in 
-            var user = userCredential.user;
-            alert('You are now registered.');
-            document.getElementById('userCreatedSuccess').setAttribute('data-bs-toggle', 'modal');
-            document.getElementById('userCreatedSuccess').setAttribute('data-bs-target', '#userCreatedSuccess');
-            redirect();
-        })
-        .catch((error) => {
+        const userCredential = await firebase.auth().createUserWithEmailAndPassword(emailToUpdate, passwordValue);
+        const user = userCredential.user;
+        const firstName =  document.getElementById('firstName').value;
+        const lastName =  document.getElementById('lastName').value;
+        const linkedin =  document.getElementById('linkedin').value;
+
+        const timestamp = Date.now();
+        const currentDate = new Date(timestamp);
+
+        const year = currentDate.getFullYear();
+        const month = currentDate.getMonth() + 1; // Months are zero-based
+        const day = currentDate.getDate();
+
+        const formattedDate = `${year}-${month < 10 ? '0' : ''}${month}-${day < 10 ? '0' : ''}${day}`;
+
+        console.log(formattedDate);
+
+        const userInfo = {
+            firstName: firstName,
+            lastName: lastName,
+            linkedin: linkedin,
+            email: emailToUpdate,
+            joined: formattedDate
+        }
+        
+        const db = firebase.firestore();
+        db.collection('members').doc(user.uid).set(userInfo);
+    }   
+    catch(error) {
             var errorCode = error.code;
             var errorMessage = error.message;
             console.log(errorCode + " : " + errorMessage);
             document.getElementById('userAlreadyExistsAlert').style.display = "block";
-            return;
-        });
-    } catch (error) {
-        console.error('Error updating password:', error.message);
     }
 });
 
@@ -93,8 +110,7 @@ async function updatePasswordInDatabase(email, password) {
         const userKey = snapshot.key;
         if (userKey) {
             await usersRef.child(userKey).update({ password: password });
-            console.log('Password updated successfully.');
-            
+            console.log('Password updated successfully.')
         } else {
             throw new Error('User key not found in the database.');
         }
@@ -106,5 +122,5 @@ async function updatePasswordInDatabase(email, password) {
 async function redirect() {
     setTimeout(function() {
         window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/index.html";
-    }, 2000); // Delay in milliseconds (2000ms = 2 seconds)      
+    }, 2000);
 }

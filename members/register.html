@@ -46,22 +46,25 @@
     <br />
     <br />
     <main>
-      <section id="member-hero" class="mx-2">
+      <section id="member-hero" class="mx-2" style="height: auto;">
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-md-5 rounded-4 login-form-container">
                 <center>
-                <div class="col-md-4 form-signin w-100 p-4">
-                <img class="py-2" src="../images/logo.svg" width="30%" alt="">
-                    <h1 class="h2 mb-5 fw-medium">Sign in with Subscribed Email</h1>
+                <div class="col-md-4 form-signin w-100 p-3">
+                <img class="py-3" src="../images/logo.svg" width="25%" alt="">
+                    <h1 class="h3 mb-5 fw-medium">Register with Subscribed Email</h1>
                     <div id="emailNotExistAlert" style="display: none;" class="alert alert-danger" role="alert">
                         Email does not exist. <br/> Please Enter email used for subscription.
                     </div>
                     <div id="passwordCheckValidationAlert" style="display: none;" class="alert alert-danger" role="alert">
-                        The user you're trying to register already exists.
+                      Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one digit.
+                    </div>
+                    <div id="passwordsNotMatchAlert" style="display: none;" class="alert alert-danger" role="alert">
+                      Passwords do not match.
                     </div>
                     <div id="userAlreadyExistsAlert" style="display: none;" class="alert alert-danger" role="alert">
-                        Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one digit.
+                      The user you're trying to register already exists.
                     </div>
                     <form id="emailForm">
                         <div class="form-floating">
@@ -70,26 +73,70 @@
                             <button
                                 id="checkEmailBtn"
                                 type="button"
-                                style="background-color: #1a1a1a; color: #fff"
-                                class="w-100 mt-4 mb-5 btn btn-lg px-4 me-sm-3 border-0 fs-5"
+                                style="background-color: transparent; border: solid 1px #dee2e6;"
+                                class="w-100 mt-4 mb-5 btn btn-lg px-4 me-sm-3 border-1 fs-5"
                             >
-                            Sign In <span><i class="bi bi-arrow-right"></i></span>
+                            <span><i class="bi bi-arrow-right"></i></span>
                             </button>
                         </div>
                     </form>
+                    <br/>
                     <div id="passwordSection" style="display: none;">
                         <form id="passwordForm">
-                            <div class="form-floating">
-                                <input style="outline: none !important; box-shadow: none;" type="password" class="form-control login-input-password" id="password" placeholder="Password">
-                                <label style="letter-spacing: 0.5px;" class="fs-6 text-muted" for="floatingPassword">Password</label>
-                            </div>
-                            <button
-                                type="submit"
-                                style="background-color: #1a1a1a; color: #fff"
-                                class="w-100 mt-4 mb-5 btn btn-lg px-4 me-sm-3 border-0 fs-5"
-                            >
-                            Register as Member <span><i class="bi bi-arrow-right"></i></span>
-                            </button>
+                          <div class="container">
+                            <main>
+                              <div class="row g-3">
+                                <div class="col-lg-6">
+                                  <div class="form-floating">
+                                    <input style="outline: none !important; box-shadow: none;" type="text" class="form-control login-input-email" id="firstName" placeholder="John">
+                                    <label style="letter-spacing: 0.5px;" class="fs-6 text-muted" for="firstName">First Name</label>
+                                    <div class="invalid-feedback">
+                                      Valid first name is required.
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-floating">
+                                    <input style="outline: none !important; box-shadow: none;" type="text" class="form-control login-input-email" id="lastName" placeholder="Doe">
+                                    <label style="letter-spacing: 0.5px;" class="fs-6 text-muted" for="firstName">Last Name</label>
+                                    <div class="invalid-feedback">
+                                      Valid last name is required.
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                  <div class="form-floating">
+                                    <input style="outline: none !important; box-shadow: none;" type="text" class="form-control login-input-email" id="linkedin" placeholder="https://linkedin.com/in/theproductleague">
+                                    <label style="letter-spacing: 0.5px;" class="fs-6 text-muted" for="firstName">LinkedIn Profile Link</label>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-floating">
+                                    <input style="outline: none !important; box-shadow: none;" type="password" class="form-control login-input-password" id="password" placeholder="Password">
+                                    <label style="letter-spacing: 0.5px;" class="fs-6 text-muted" for="floatingPassword">Password</label>
+                                    
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                  <div class="form-floating">
+                                    <input style="outline: none !important; box-shadow: none;" type="password" class="form-control login-input-password" id="checkPassword" placeholder="Password">
+                                    <label style="letter-spacing: 0.5px;" class="fs-6 text-muted" for="floatingPassword">Re-enter Password</label>
+                                    
+                                  </div>
+                                </div>
+                            </main>
+                          </div>
+                          <button
+                              type="submit"
+                              id="registerBtn"
+                              style="background-color: #1a1a1a; color: #fff"
+                              class="w-100 mt-4 mb-5 btn btn-lg px-4 me-sm-3 border-0 fs-5"
+                          >
+                          Register as Member <span><i class="bi bi-arrow-right"></i></span>
+                          </button>
                         </form>
                     </div>
                 </div>

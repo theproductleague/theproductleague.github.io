@@ -14,17 +14,23 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     document.getElementById("dashboard").style.display = "block";
-    document.getElementById("login-container").style.display = "none";
+    
     var user = firebase.auth().currentUser;
     if(user != null){
-      var email_id = user.email;
-      // document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
-      document.querySelector('.greet').style.display = 'block';
+      firebase.firestore().collection('members').doc(user.uid).get()
+      .then(doc => {
+        if (doc.exists) {
+            const userData = doc.data();
+            document.getElementById('name').innerHTML = `${userData.firstName + " " + userData.lastName} <br/> <span style="font-size: small; color: #007bff">${userData.email}</span>`;
+        } else {
+            console.log('User data not found.');
+      }
+    });
+    } 
+    else {
+      // No user is signed in.
+      document.getElementById("dashboard").style.display = "none";
     }
-  } else {
-    // No user is signed in.
-    document.getElementById("login-container").style.display = "block";
-    document.getElementById("dashboard").style.display = "none";
   }
 });
 
@@ -36,8 +42,6 @@ function login(){
   firebase.auth().signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
       // Signed in
-      var user = userCredential.user;
-      document.getElementById("login-container").style.display = "block";
       document.getElementById("dashboard").style.display = "none";
     })
     .catch((error) => {
@@ -51,8 +55,8 @@ function logout(){
   firebase.auth().signOut().then(() => {
     setTimeout(function() {
       window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/login.html";
-  }, 2000); // Delay in milliseconds (2000ms = 2 seconds)   
+  }, 2000); 
   }).catch((error) => {
-    //...
+    
   });
 }

@@ -45,8 +45,7 @@ function getInputVal(id){
 
 // Save message to firebase
 function saveMessage(email){
-  var dbEntry = db.push();
-  dbEntry.set({
+  firebase.database().ref('members/').set({
     email:email
   });
 }

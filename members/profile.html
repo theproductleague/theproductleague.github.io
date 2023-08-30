@@ -16,21 +16,14 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
         crossorigin="anonymous"
         />
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <title>The Product League at UT Dallas</title>
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <meta
-        name="google-site-verification"
-        content="H2dy-OxrgavFQ5clok0lSnYz6MX1LL-JHHc0JBvakBg"
-        />
-        
+        <link rel="stylesheet" href="./main.css" />
     </head>
     <body class="bg-light">
         <style>
@@ -51,62 +44,63 @@
               <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
                   <img src="../images/logo.svg" width="20%" alt="">
-                  <span class="fs-4 fw-semibold">Sync</span>
                 </a>
           
                 <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
                   <a class="me-3 py-2 text-dark text-decoration-none" href="./index.html">Home</a>
-                  <a class="py-2 text-dark text-decoration-none" href="#" onclick="logout()">Sign Out</a>
+                  <a class="py-2 text-dark text-decoration-none" href="#" onclick="logout()">Sign out</a>
                 </nav>
               </div>
           
-              <div class="pricing-header p-3 pb-md-4 mx-auto">
-                <h1 id="greeting" class="fs-3 fw-medium"></h1> <br/>
-                <h1 id="greeting" class="fs-4 fw-medium">Your Personal Information</h1>
-                <p class="fs-6 text-muted">View your personal information, including phone numbers and email addresses where you can be reached.</p>
-              </div>
-
+              <section id="">
+                <div class="p-3 pb-md-4 mx-auto">
+                  <h1 id="greeting" class="fs-3 fw-medium"></h1> <br/>
+                  <h1 id="greeting" class="fs-4 fw-medium">Your Personal Information</h1>
+                  <p class="fs-5 text-muted">View your personal information, including subscription details.</p>
+                </div>
+  
+              </section>
               <main>
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="row row-cols-1 row-cols-md-2 g-2">
                     <div class="col">
-                      <div class="card shadow-sm border-1">
+                      <div class="profile-tiles card border-0">
                         <div class="card-body">
-                          <h5 class="card-title">Name</h5>
-                          <p id="name" class="card-text text-muted"></p>
+                          <h5 style="font-size: 18px;" class="fw-normal text-black-50 card-title">Name</h5>
+                          <p style="font-size: 19px;" id="name" class="card-text text-black"></p>
                         </div>
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card shadow-sm border-1">
+                      <div class="profile-tiles card border-0">
                         <div class="card-body">
-                          <h5 class="card-title">Email</h5>
-                          <p id="email" class="card-text text-muted"></p>
+                          <h5 style="font-size: 18px; " class="fw-normal text-black-50 card-title">Subscribed Email</h5>
+                          <p style="font-size: 19px;" id="email" class="card-text text-black"></p>
                         </div>
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card shadow-sm border-1">
+                      <div class="profile-tiles card border-0">
                         <div class="card-body">
-                          <h5 class="card-title">Joined</h5>
-                          <p id="joinedDate" class="card-text text-muted"></p>
+                          <h5 style="font-size: 18px;" class="fw-normal text-black-50 card-title">Joined</h5>
+                          <p style="font-size: 19px;" id="joinedDate" class="card-text text-black"></p>
                         </div>
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card shadow-sm border-1">
+                      <div class="profile-tiles card border-0">
                         <div class="card-body">
-                          <h5 class="card-title">Linkedin URL</h5>
-                          <p id="url" class="card-text text-muted"></p>
+                          <h5 style="font-size: 18px;" class="fw-normal text-black-50 card-title">Linkedin URL</h5>
+                          <p style="font-size: 19px;" id="url" class="card-text text-black"></p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <br/>
-                  <div class="card shadow-sm border-1 text-start ">
+                  <div class="profile-tiles card border-0 text-start ">
                     <div class="card-body ">
-                      <h5 class="card-title">Subscription</h5>
+                      <h5 style="font-size: 18px;" class="fw-normal text-black-50 card-title">Subscription</h5>
                       <p class="card-text">
-                        <a class="text-decoration-none" href="">View your subscription details <i class="bi bi-up-right"></i></a>
+                        <a style="font-size: 19px;" class="text-decoration-none" target="_blank" href="https://billing.stripe.com/p/login/bIY6pr96lgIxgr69AA">View your subscription details <i class="bi bi-arrow-up-right"></i></a>
                       </p>
                     </div>
                   </div>

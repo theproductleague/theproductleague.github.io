@@ -14,7 +14,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     document.getElementById("dashboard").style.display = "block";
-    
     var user = firebase.auth().currentUser;
     if(user != null){
       firebase.firestore().collection('members').doc(user.uid).get()
@@ -34,29 +33,23 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-function login(){
-
-  var email = document.getElementById("floatingEmailInput").value;
-  var password = document.getElementById("floatingPasswordInput").value;
-
-  firebase.auth().signInWithEmailAndPassword(email, password)
-    .then((userCredential) => {
-      // Signed in
-      document.getElementById("dashboard").style.display = "none";
-    })
-    .catch((error) => {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      console.log(errorCode + " : " + errorMessage);
-  });
-}
-
 function logout(){
+  // Apply fade-out transition to the main content
+  const mainContent = document.getElementById('dashboard'); // Adjust this to your actual content element
+  mainContent.style.transition = 'opacity 1s';
+  mainContent.style.opacity = 0;
+
+  // Show the loading spinner
+  const spinner = document.getElementById('loading-spinner'); // Adjust this to your loading spinner element
+  spinner.style.display = 'block';
+
+  // Perform the logout process
   firebase.auth().signOut().then(() => {
+    // Delay the redirection for 2 seconds
     setTimeout(function() {
-      window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/login.html";
-  }, 2000); 
+      window.location.href = "./login.html";
+    }, 2000);
   }).catch((error) => {
-    
+    // Handle errors
   });
 }

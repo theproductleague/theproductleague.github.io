@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Podcasts | The Product League</title>
+    <!-- Favicons -->
+    <link href="../images/logo-tpl.png" rel="icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section id="memberPodcasts">
+        <header>
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid px-4 py-2">
+                  <a class="navbar-brand fw-medium text-primary" href="#">Sync</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" aria-current="page" onclick="logout()" href="#">Log out</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <br />
+        <!-- hero -->
+        <center>
+          <section id="member-hero" class="bg-white mx-2 rounded-4">
+            <div class="col-lg-8 mx-auto">
+              <div class="mb-3 fw-medium fs-1 text-black">
+                Our Podcasts' Series.
+              </div>
+            </div>
+            <br />
+            <div class="container">
+              <div class="row g-2">
+                <div class="card mb-3 border-0 shadow" style="max-width: 960px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../images/podcasts/ep1.jpeg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-start">
+                        <h5 class="card-title">What is Product Management?</h5>
+                        <p class="card-text text-muted">Listen to this episode on our Podcast on Spotify. In this
+                          episode,
+                          <strong>Dr. Vasant Gondhalekar</strong> joins me to discuss
+                          the ins and outs of Product Management. We cover the
+                          definition of PM, the key responsibilities of a product
+                          manager, and the necessary skills and qualities for success
+                          in this role.</p>
+                          
+                          <div class="row align-items-start">
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://open.spotify.com/episode/1f4ku4XQePWw11ofpoDYTd"
+                                ><img
+                                  src="../images/podcasts/spotify.svg"
+                                  style="max-width: 50%"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://podcasts.apple.com/us/podcast/the-product-league-podcast/id1692050923"
+                                ><img
+                                  src="../images/podcasts/applemusic.svg"
+                                  style="max-width: 40%"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://music.amazon.com/podcasts/74827d31-ccbc-4ba5-9ea4-701d6dd01454/the-product-league-podcast?refMarker=null"
+                                ><img
+                                  src="../images/podcasts/amazonmusic.png"
+                                  width="40%"
+                                  alt=""
+                              /></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 border-0 shadow" style="max-width: 960px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../images/podcasts/ep1.jpeg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-start">
+                        <h5 class="card-title">What is Product Management?</h5>
+                        <p class="card-text text-muted">Listen to this episode on our Podcast on Spotify. In this
+                          episode,
+                          <strong>Dr. Vasant Gondhalekar</strong> joins me to discuss
+                          the ins and outs of Product Management. We cover the
+                          definition of PM, the key responsibilities of a product
+                          manager, and the necessary skills and qualities for success
+                          in this role.</p>
+                          
+                          <div class="row align-items-start">
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://open.spotify.com/episode/1f4ku4XQePWw11ofpoDYTd"
+                                ><img
+                                  src="../images/podcasts/spotify.svg"
+                                  style="max-width: 50%"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://podcasts.apple.com/us/podcast/the-product-league-podcast/id1692050923"
+                                ><img
+                                  src="../images/podcasts/applemusic.svg"
+                                  style="max-width: 40%"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://music.amazon.com/podcasts/74827d31-ccbc-4ba5-9ea4-701d6dd01454/the-product-league-podcast?refMarker=null"
+                                ><img
+                                  src="../images/podcasts/amazonmusic.png"
+                                  width="40%"
+                                  alt=""
+                              /></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 border-0 shadow" style="max-width: 960px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../images/podcasts/ep1.jpeg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-start">
+                        <h5 class="card-title">What is Product Management?</h5>
+                        <p class="card-text text-muted">Listen to this episode on our Podcast on Spotify. In this
+                          episode,
+                          <strong>Dr. Vasant Gondhalekar</strong> joins me to discuss
+                          the ins and outs of Product Management. We cover the
+                          definition of PM, the key responsibilities of a product
+                          manager, and the necessary skills and qualities for success
+                          in this role.</p>
+                          
+                          <div class="row align-items-start">
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://open.spotify.com/episode/1f4ku4XQePWw11ofpoDYTd"
+                                ><img
+                                  src="../images/podcasts/spotify.svg"
+                                  style="max-width: 50%"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://podcasts.apple.com/us/podcast/the-product-league-podcast/id1692050923"
+                                ><img
+                                  src="../images/podcasts/applemusic.svg"
+                                  style="max-width: 40%"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://music.amazon.com/podcasts/74827d31-ccbc-4ba5-9ea4-701d6dd01454/the-product-league-podcast?refMarker=null"
+                                ><img
+                                  src="../images/podcasts/amazonmusic.png"
+                                  width="40%"
+                                  alt=""
+                              /></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 border-0 shadow" style="max-width: 960px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../images/podcasts/ep1.jpeg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-start">
+                        <h5 class="card-title">What is Product Management?</h5>
+                        <p class="card-text text-muted">Listen to this episode on our Podcast on Spotify. In this
+                          episode,
+                          <strong>Dr. Vasant Gondhalekar</strong> joins me to discuss
+                          the ins and outs of Product Management. We cover the
+                          definition of PM, the key responsibilities of a product
+                          manager, and the necessary skills and qualities for success
+                          in this role.</p>
+                          
+                          <div class="row align-items-start">
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://open.spotify.com/episode/1f4ku4XQePWw11ofpoDYTd"
+                                ><img
+                                  src="../images/podcasts/spotify.svg"
+                                  style="max-width: 50%"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://podcasts.apple.com/us/podcast/the-product-league-podcast/id1692050923"
+                                ><img
+                                  src="../images/podcasts/applemusic.svg"
+                                  style="max-width: 40%"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://music.amazon.com/podcasts/74827d31-ccbc-4ba5-9ea4-701d6dd01454/the-product-league-podcast?refMarker=null"
+                                ><img
+                                  src="../images/podcasts/amazonmusic.png"
+                                  width="40%"
+                                  alt=""
+                              /></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 border-0 rounded-4">
+                    <img
+                      width="100%"
+                      height="250"
+                      class="rounded-top-4 object"
+                      src="../images/ep1d.png"
+                      alt="intro cover"
+                      class="object-fit-cover"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <small class="text-body-secondary">Episode I</small>
+                      </p>
+                      <h5 class="card-title fs-4 fw-medium">
+                        What is Product Management?
+                      </h5>
+                      <p class="card-text px-2">
+                        Listen to this episode on our Podcast on Spotify. In this
+                        episode,
+                        <strong>Dr. Vasant Gondhalekar</strong> joins me to discuss
+                        the ins and outs of Product Management. We cover the
+                        definition of PM, the key responsibilities of a product
+                        manager, and the necessary skills and qualities for success
+                        in this role.
+                      </p>
+                      <div class="container text-center">
+                        <div class="row align-items-start">
+                          <div class="col">
+                            <a
+                              class="nav-link"
+                              href="https://open.spotify.com/episode/1f4ku4XQePWw11ofpoDYTd"
+                              ><img
+                                src="../images/podcasts/spotify.svg"
+                                style="max-width: 60%"
+                                alt=""
+                            /></a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="nav-link"
+                              href="https://podcasts.apple.com/us/podcast/the-product-league-podcast/id1692050923"
+                              ><img
+                                src="../images/podcasts/applemusic.svg"
+                                style="max-width: 60%"
+                                alt=""
+                            /></a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="nav-link"
+                              href="https://music.amazon.com/podcasts/74827d31-ccbc-4ba5-9ea4-701d6dd01454/the-product-league-podcast?refMarker=null"
+                              ><img
+                                src="../images/podcasts/amazonmusic.png"
+                                width="50%"
+                                alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 border-0 rounded-4">
+                    <img
+                      width="100%"
+                      height="250"
+                      class="rounded-top-4"
+                      src="../images/ep2.png"
+                      alt="intro cover"
+                      class="object-fit-cover"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <small class="text-body-secondary">Episode II</small>
+                      </p>
+                      <h5 class="card-title fs-4">Why Product Management?</h5>
+                      <p class="card-text px-2">
+                        In this episode, I am joined by
+                        <strong>Chase Rivera</strong>, a Senior Consultant/Product
+                        Manager at Deloitte, as we explore why many new product
+                        managers who he interviews, fail to answer the question "Why
+                        do you want to become a product manager?" properly, and how
+                        to give an impressive response.
+                      </p>
+                      <div class="container text-center">
+                        <div class="row align-items-start">
+                          <div class="col">
+                            <a
+                              class="nav-link"
+                              href="https://open.spotify.com/episode/27oZBNwXTo9QauzMgLrpqe"
+                              ><img
+                                src="../images/podcasts/spotify.svg"
+                                style="max-width: 60%"
+                                alt=""
+                            /></a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="nav-link"
+                              href="https://podcasts.apple.com/us/podcast/the-product-league-podcast/id1692050923"
+                              ><img
+                                src="../images/podcasts/applemusic.svg"
+                                style="max-width: 60%"
+                                alt=""
+                            /></a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="nav-link"
+                              href="https://music.amazon.com/podcasts/74827d31-ccbc-4ba5-9ea4-701d6dd01454/the-product-league-podcast"
+                              ><img
+                                src="../images/podcasts/amazonmusic.png"
+                                width="50%"
+                                alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 border-0 rounded-4">
+                    <img
+                      width="100%"
+                      height="250"
+                      class="rounded-top-4"
+                      src="../images/ep3.jpeg"
+                      alt="intro cover"
+                      class="object-fit-cover"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <small class="text-body-secondary">Episode III</small>
+                      </p>
+                      <h5 class="card-title fs-4">
+                        Part I: The "Dark Side" of being a PM
+                      </h5>
+                      <p class="card-text px-2">
+                        In this episode, I am joined by
+                        <strong
+                          >Tiffany Chen, MBA Lead Product Manager at AT&T</strong
+                        >, and
+                        <strong>Alexis Guel, Product Manager at Indeed</strong>. In
+                        this episode, I'll be stating 7 potential dark sides (or
+                        challenges) of being a product manager, and both Tiffany and
+                        Alexis will validate them based on their experience.
+                      </p>
+                      <div class="container text-center">
+                        <div class="row align-items-start">
+                          <div class="col">
+                            <a
+                              class="nav-link"
+                              href="https://open.spotify.com/show/1bTaJP3kGRRKIHvVuwJ0cT"
+                              ><img
+                                src="../images/podcasts/spotify.svg"
+                                style="max-width: 60%"
+                                alt=""
+                            /></a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="nav-link"
+                              href="https://podcasts.apple.com/us/podcast/the-product-league-podcast/id1692050923"
+                              ><img
+                                src="../images/podcasts/applemusic.svg"
+                                style="max-width: 60%"
+                                alt=""
+                            /></a>
+                          </div>
+                          <div class="col">
+                            <a
+                              class="nav-link"
+                              href="https://music.amazon.com/podcasts/74827d31-ccbc-4ba5-9ea4-701d6dd01454/the-product-league-podcast"
+                              ><img
+                                src="../images/podcasts/amazonmusic.png"
+                                width="50%"
+                                alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <center>
+                  <div class="col">
+                    <div class="card h-100 border-0 rounded-4">
+                      <img
+                        width="100%"
+                        height="250"
+                        class="rounded-top-4 object"
+                        src="../images/ep4.jpeg"
+                        alt="intro cover"
+                        class="object-fit-cover"
+                      />
+                      <div class="card-body">
+                        <p class="card-text">
+                          <small class="text-body-secondary">Episode IV</small>
+                        </p>
+                        <h5 class="card-title fs-4 fw-medium">
+                          Part II: The "Dark Side" of being a PM
+                        </h5>
+                        <p class="card-text px-2">
+                          In the Part II of the "dark sides" of being a Product
+                          Manager, I am joined by <strong> Alexis</strong>, a
+                          Product Manager from Indeed. Alexis gives a fresh
+                          perspective on the challenges of being a PM, sharing
+                          similarities but also huge differences from that of
+                          Tiffany's, on part I. This shows how Product Management
+                          role differs from one company to another
+                        </p>
+                        <div class="container text-center">
+                          <div class="row align-items-start">
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://open.spotify.com/episode/04DOuBCFQRO5LGquWRSMQS"
+                                ><img
+                                  src="../images/podcasts/spotify.svg"
+                                  style="max-width: 60%"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://podcasts.apple.com/us/podcast/the-product-league-podcast/id1692050923"
+                                ><img
+                                  src="../images/podcasts/applemusic.svg"
+                                  style="max-width: 60%"
+                                  alt=""
+                              /></a>
+                            </div>
+                            <div class="col">
+                              <a
+                                class="nav-link"
+                                href="https://music.amazon.com/podcasts/74827d31-ccbc-4ba5-9ea4-701d6dd01454/the-product-league-podcast?refMarker=null"
+                                ><img
+                                  src="../images/podcasts/amazonmusic.png"
+                                  width="50%"
+                                  alt=""
+                              /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </section>
+        </center>
+    
+        <section id="footer">
+          <div class="container">
+            <footer
+              class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2"
+            >
+              <div class="col-md-4 d-flex align-items-center">
+                <span style="color: #1a1a1a" class="mb-3 mb-md-0 fs-6 fw-light"
+                  >&copy; 2023 The Product League</span
+                >
+              </div>
+    
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3 fs-3">
+                  <a
+                    style="color: #1a1a1a"
+                    href="https://www.linkedin.com/company/theproductleague/"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </li>
+                <li class="ms-3 fs-3">
+                  <a style="color: #1a1a1a" href="mailto: team@theproductleague.com"
+                    ><i class="bi bi-envelope"></i
+                  ></a>
+                </li>
+                <li class="ms-3 fs-3">
+                  <a
+                    style="color: #1a1a1a"
+                    href="https://instagram.com/theproductleague"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </footer>
+          </div>
+        </section>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+    <script src="./js/podcasts.js"></script>
+  </body>
+</html>

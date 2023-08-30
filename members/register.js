@@ -121,6 +121,6 @@ async function updatePasswordInDatabase(email, password) {
 
 async function redirect() {
     setTimeout(function() {
-        window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/index.html";
+        window.location.href = "./index.html";
     }, 2000);
 }

@@ -14,6 +14,7 @@ firebase.initializeApp(config);
 firebase.auth().onAuthStateChanged(function(user) {
 if (user) {
     // User is signed in.
+    document.getElementById('memberPodcasts').style.display = 'block';
     var user = firebase.auth().currentUser;
     if(user != null){
         // Fetch user data from Firestore
@@ -36,8 +37,9 @@ if (user) {
         });
     }
 } else {
+    document.getElementById('memberPodcasts').style.display = 'block';
     setTimeout(function() {
-        window.location.href = "./sync.html";
+        window.location.href = "./login.html";
     }, 2000);
 }
 });
@@ -47,7 +49,7 @@ if (user) {
 function logout(){
     firebase.auth().signOut().then(() => {
         setTimeout(function() {
-        window.location.href = "./index.html";
+        window.location.href = "../podcasts.html";
     }, 2000); // Delay in milliseconds (2000ms = 2 seconds)   
     }).catch((error) => {
         //...

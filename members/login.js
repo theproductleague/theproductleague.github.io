@@ -10,31 +10,18 @@ var config = {
 };
 firebase.initializeApp(config);
 
-
-
 function login(){
-var email = document.getElementById("floatingEmailInput").value;
-var password = document.getElementById("floatingPasswordInput").value;
-
-firebase.auth().signInWithEmailAndPassword(email, password)
-    .then((userCredential) => {
-        // Signed in
-        setTimeout(function() {
-            window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/index.html";
-        }, 2000);
-    })
-    .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    console.log(errorCode + " : " + errorMessage);
-});
-}
-
-function logout(){
-firebase.auth().signOut().then(() => {
-    setTimeout(function() {
-    window.location.href = "https://potential-space-acorn-4wgxxxvxgvrcjw5v-5501.app.github.dev/members/login.html";
-}, 2000); // Delay in milliseconds (2000ms = 2 seconds)   
-}).catch((error) => {
-});
+    var email = document.getElementById("floatingEmailInput").value;
+    var password = document.getElementById("floatingPasswordInput").value;
+  
+    firebase.auth().signInWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        // User is signed in.
+        window.location.href = "./index.html"
+      })
+      .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode + " : " + errorMessage);
+    });
 }

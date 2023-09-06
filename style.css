@@ -250,3 +250,11 @@ body {
   border-radius: 40px;
   letter-spacing: 0.5px;
 }
+
+.btn-tpl {
+  font-size: smaller;
+  font-weight: 400 !important;
+  padding: 10px 20px !important;
+  border-radius: 40px;
+  letter-spacing: 0.5px;
+}
